@@ -1,0 +1,34 @@
+# ── LLM providers ──────────────────────────────────────────────────────────
+# Google Gemini (primary) — NOTE: package is google-generativeai, NOT google-genai
+google-generativeai
+
+# OpenAI (fallback)
+openai
+
+# ── Agent framework ────────────────────────────────────────────────────────
+# LangGraph (StateGraph, agent graph execution)
+langgraph
+langchain-core
+
+# ── PDF / document processing ─────────────────────────────────────────────
+PyMuPDF
+
+# ── Database / data generation ────────────────────────────────────────────
+faker
+bcrypt
+
+# ── Web search ────────────────────────────────────────────────────────────
+duckduckgo-search
+
+# ── CLI interface ─────────────────────────────────────────────────────────
+rich
+
+# ── Configuration ─────────────────────────────────────────────────────────
+python-dotenv
+
+# ── FastAPI server ────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+
+# ── Address validation (optional but used) ────────────────────────────────
+geopy

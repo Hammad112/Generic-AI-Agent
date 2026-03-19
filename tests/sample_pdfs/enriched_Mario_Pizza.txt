@@ -1,0 +1,1783 @@
+MARIO’S PIZZA
+
+123 Main Street, Toronto, ON M4K 1A1
+Phone: (416) 555-0199
+
+1. Company Overview
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask the customer if they are ordering for a group or just for themselves.
+  2. If they mention a budget, suggest our value meal options or combo deals.
+  3. Guide the customer through our menu by asking if they prefer pizza, pasta, or salads.
+  4. If they express a preference for spicy, suggest our Buffalo Chicken Pizza or Spicy Italian Sausage.
+  5. If the customer is in a rush, recommend our pre-made pizzas or the express pickup option.
+  6. Offer to customize their pizza by asking if they want to add extra toppings or change the sauce.
+  7. If a customer seems indecisive, suggest our most popular items like the Margherita Pizza or Meat Lovers.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita Pizza is one of our most popular items due to its fresh ingredients and classic flavor.
+  2. Families often order large pizzas with multiple toppings to cater to different tastes.
+  3. Peak demand for pizza typically occurs on weekends and during major sports events.
+  4. All pizzas can be made gluten-free upon request for customers with dietary restrictions.
+  5. A standard large pizza takes about 15 minutes to prepare, while specialty pizzas may take longer.
+
+1.1 Business Description
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a classic or specialty pizza to narrow down their choices.
+  2. If they mention budget, route to our value menu options for more affordable choices.
+  3. Guide the customer through our pizza sizes, starting with small, medium, or large to help them decide.
+  4. If they express a preference for vegetarian options, suggest our Margherita or Veggie Deluxe pizzas.
+  5. If they mention they are in a rush, recommend our ready-to-go pizzas for quick service.
+  6. Offer group ordering discounts if they mention they are ordering for a party or gathering.
+  7. If they seem indecisive, ask about their favorite toppings to help steer them towards a pizza they will enjoy.
+
+[KNOWLEDGE FACTS]
+  1. The most popular item is the Pepperoni Pizza due to its classic flavor and broad appeal.
+  2. Families with children often prefer our combo meals, which include pizza, drinks, and sides.
+  3. Demand for gluten-free crust options increases during summer months as more customers seek healthier choices.
+  4. All pizzas can be customized for dietary restrictions, but we caution that cross-contamination can occur for gluten-free options.
+  5. Experienced employees know that a 14-inch pizza typically feeds 3-4 people and takes about 15 minutes to prepare.
+
+
+1.1.1 Mario’s Pizza is a locally owned quick-service restaurant located in Toronto, Ontario.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any food allergies before taking their order.
+  2. If they order a large pizza, suggest adding a side of garlic knots for $5.
+  3. Mention that our Margherita pizza goes great with a fresh Caesar salad.
+  4. Confirm that the average prep time for a pizza is about 15 minutes.
+  5. Warn the customer that our BBQ Chicken Pizza contains gluten and is not suitable for those with gluten intolerance.
+  6. Suggest our vegetarian options if they mention they're looking for healthier choices.
+  7. If they express concerns about calories, recommend our thin crust option which has fewer calories than traditional crust.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has ~2400 calories total (300 calories per slice).
+  2. Preparation for a stuffed crust pizza takes an additional 5 minutes compared to a regular crust.
+  3. The Margherita pizza is a seasonal favorite during the summer months due to fresh basil availability.
+  4. Regulars know that the garlic knots are a perfect pairing with any pizza and often order them together.
+  5. Our pizza margins are higher on specialty pizzas, so upselling them can significantly boost sales.
+
+
+1.1.2 The business specializes in freshly prepared pizzas, sides, and beverages available for delivery and pickup.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions or allergies that we should be aware of.
+  2. Suggest adding a side of garlic knots if they order a pizza to enhance their meal.
+  3. Mention that our pizzas are made fresh daily, ensuring the highest quality.
+  4. Warn the customer that our spicy sausage pizza contains gluten and may not be suitable for those with sensitivities.
+  5. Confirm the estimated preparation time of 15-20 minutes for a standard pizza order.
+  6. If they express interest in a lighter option, recommend our Garden Salad as a refreshing complement.
+  7. Offer a beverage pairing suggestion, like a soda or iced tea, with their pizza order.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 300 calories per slice, totaling around 2400 calories for the whole pizza, making it ideal for sharing among friends.
+  2. Our Margherita pizza is a best seller and is made with fresh basil and mozzarella.
+  3. Specialty pizzas like the BBQ Chicken take about 20 minutes to prepare due to additional toppings.
+  4. Regulars know that ordering the family meal deal offers better value than individual items.
+  5. Our pizzas are baked at a high temperature for a crispy crust, typically taking about 15-20 minutes from order to finish.
+
+
+1.1.3 The restaurant serves customers within a 10 km radius of its physical location.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions or allergies before taking their order.
+  2. Recommend adding a side of garlic knots if they order a large pizza.
+  3. Mention that our pizzas are made with fresh ingredients and can be customized to their liking.
+  4. Confirm the estimated preparation time is about 15 minutes for a standard pizza order.
+  5. Suggest our gluten-free crust option if they mention gluten sensitivity.
+  6. Warn the customer that our buffalo sauce is spicy and may not be suitable for everyone.
+  7. If they seem uncertain about their choice, offer to recommend our most popular pizza, the Margherita.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total (300 calories per slice).
+  2. Our margherita pizza is a best seller and is made with fresh mozzarella and basil.
+  3. Gluten-free crust adds an additional $2.00 to the order and takes about 2 extra minutes to prepare.
+  4. Regulars know that our special deal on Mondays includes a free topping with any pizza purchase.
+  5. The stuffed crust option takes an additional 5 minutes to prepare compared to the standard crust.
+
+
+1.1.4 Mario’s Pizza focuses on affordability, quick preparation times, and customizable menu options suitable for individuals and families.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, especially regarding gluten, dairy, or nuts.
+  2. Recommend adding a side of garlic knots if they order a pizza for just $4.99.
+  3. Mention that our pizzas are customizable and can be made with a gluten-free crust for an additional charge.
+  4. Confirm that most pizzas take around 15 minutes to prepare, depending on the size and toppings.
+  5. Warn the customer that our spicy pepperoni pizza may not be suitable for those who prefer milder flavors.
+  6. Suggest pairing their pizza with a refreshing soda or iced tea for a complete meal.
+  7. If they express concern about calories, pivot to the option of our Garden Salad, which is lighter and very popular.
+
+[KNOWLEDGE FACTS]
+  1. A standard large cheese pizza has approximately 2,400 calories total (300 calories per slice).
+  2. Our pizza dough is prepared fresh daily, and the average preparation time for a standard pizza is about 15 minutes.
+  3. The pepperoni pizza is our best seller, especially on weekends.
+  4. Regular customers know that ordering a half-and-half pizza is a great way to try different toppings without ordering two pizzas.
+  5. The cost of a large pepperoni pizza is $19.99, with a 70% profit margin on each sale.
+
+
+2. Operating Hours
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask the customer if they are looking for a specific type of pizza or a meal deal.
+  2. If they mention a budget, guide them towards our value meal options.
+  3. Suggest our special combo deals if they are ordering for a group.
+  4. If the customer seems indecisive, offer to recommend our best-selling items like the Margherita or Pepperoni pizza.
+  5. If they mention they are in a rush, recommend our ready-to-go pizza slices available at the counter.
+  6. Confirm if they prefer a personal size or a larger pizza for sharing.
+  7. Mention any ongoing promotions or discounts that might suit their order.
+
+[KNOWLEDGE FACTS]
+  1. The most popular item is the Pepperoni pizza, known for its classic flavor and high customer satisfaction.
+  2. Families often prefer combo deals, while young adults might lean towards specialty pizzas.
+  3. Peak demand typically occurs on weekends and during major sports events.
+  4. Our policy is to ensure all pizzas are made fresh to order, with a standard prep time of 15-20 minutes.
+  5. Experienced employees suggest that gluten-free crust options are increasingly popular, catering to dietary restrictions.
+
+2.1 Regular Business Hours
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they are ordering for a group or just for themselves to tailor recommendations.
+  2. If they mention a budget, guide them toward our value menu items that fit their price range.
+  3. Suggest our most popular pizza options first, like the Margherita or Pepperoni, to streamline decision-making.
+  4. If the customer is in a rush, recommend our ready-to-go slices for quick service.
+  5. Confirm if they have any dietary restrictions, such as gluten-free needs, to suggest suitable options.
+  6. If the customer seems indecisive, offer a combo deal that includes a pizza, drink, and sides to simplify their choice.
+  7. Mention that we have seasonal specials available, which may cater to current tastes and preferences.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita pizza is the most popular due to its simple ingredients and fresh flavor, appealing to a wide range of customers.
+  2. Families often prefer large pizzas with a mix of toppings, while single customers might choose personal-sized pizzas.
+  3. During football season, demand for large pizzas increases significantly, especially on game days.
+  4. All pizzas can be customized, and we offer a gluten-free crust option for those with dietary restrictions.
+  5. Experienced employees know that the average prep time for a pizza is about 15 minutes, but specialty pizzas can take longer.
+
+
+2.1.1 Monday – Thursday: 11:00 AM – 10:00 PM
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, especially related to gluten or dairy.
+  2. Recommend adding a side of garlic knots if they order any pizza.
+  3. Mention that our pizzas take about 15 minutes to prepare, especially during peak hours.
+  4. Warn the customer that our BBQ Chicken Pizza contains allergens such as dairy and gluten.
+  5. Suggest trying our new Spicy Pepperoni if they enjoy a little heat with their pizza.
+  6. Confirm if they would like to add a drink to their order for a better meal experience.
+  7. If they express concerns about calories, pivot to our Light Veggie Pizza, which is a healthier option.
+
+[KNOWLEDGE FACTS]
+  1. A large Margherita pizza has approximately 2200 calories total (275/cal per slice).
+  2. A large pepperoni pizza contains approximately 2400 calories total (300 calories per slice).
+  3. Our Pepperoni pizza is one of our best sellers and is consistently popular among regulars.
+  4. Stuffed crust pizzas require an additional 5 minutes of preparation time due to the extra steps involved.
+  5. A typical margin for our pizzas is around 60%, making them a high-value menu item.
+
+
+2.1.2 Friday – Saturday: 11:00 AM – 11:00 PM
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, especially regarding gluten or dairy.
+  2. Suggest adding a side of garlic knots if they order a large pizza.
+  3. Mention that our Margherita pizza pairs great with a fresh garden salad.
+  4. Confirm the preparation time for a stuffed crust pizza is approximately 15 minutes.
+  5. Warn the customer that our buffalo chicken pizza is spicy and may not be suitable for everyone.
+  6. If they express interest in healthy options, pivot to recommending our cauliflower crust pizza.
+  7. Offer to customize their pizza with extra toppings for just $1.00 each.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains approximately 2400 calories total (300 calories per slice).
+  2. Our gluten-free crust takes an additional 5 minutes to prepare.
+  3. The Margherita pizza is one of our best sellers, especially during the weekend rush.
+  4. Regulars know that ordering a large pizza often comes with a free 2-liter soda promotion.
+  5. The profit margin on specialty pizzas is approximately 30% higher than on traditional pepperoni.
+
+
+2.1.3 Sunday: 12:00 PM – 9:00 PM
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they have any dietary restrictions, particularly regarding gluten or dairy allergies.
+  2. If they order a Margherita pizza, suggest adding a side of garlic knots for only $3.00.
+  3. Mention that our BBQ Chicken pizza goes great with a refreshing house salad.
+  4. Confirm with the customer that the average preparation time for a pizza is about 15 minutes.
+  5. Warn the customer that our Meat Lovers pizza contains pork and beef, which may not suit all diets.
+  6. Suggest the Veggie Delight pizza if the customer mentions they are looking for a healthier option.
+  7. If a customer expresses concern about calories, recommend our lighter options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total, averaging 300 calories per slice.
+  2. Our stuffed crust pizza adds about 5 minutes to the preparation time compared to regular crust.
+  3. The BBQ Chicken pizza is one of our best sellers and is particularly popular during summer.
+  4. Regular customers know that our daily special includes a free drink with any large pizza purchase.
+  5. The average profit margin on our specialty pizzas is around 30%, making them a good upsell option.
+
+
+2.2 Holiday Schedule
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they are ordering for a group or for themselves to tailor the menu options.
+  2. If they mention a budget, recommend our value combo deals that fit within their price range.
+  3. Guide the customer through our holiday specials by mentioning the seasonal pizzas available.
+  4. If they express urgency, suggest our ready-to-go pizzas that can be picked up quickly.
+  5. Offer to customize their pizza by asking if they want to add extra toppings for a small additional charge.
+  6. Confirm any dietary restrictions by asking if anyone has allergies or specific dietary needs.
+  7. If they seem indecisive, suggest our most popular item, the Margherita Pizza, to help them make a choice.
+
+[KNOWLEDGE FACTS]
+  1. Our Margherita Pizza is the most popular item due to its fresh ingredients and classic flavor.
+  2. Families with children often prefer our kid-friendly meal options, like the personal pizzas and sides.
+  3. During holiday seasons, demand for specialty pizzas typically increases by 30%, especially around Thanksgiving and Christmas.
+  4. All pizzas can be made with gluten-free crust upon request, but please inform customers that cross-contamination may occur.
+  5. A large cheese pizza takes approximately 20 minutes to prepare, while specialty pizzas may take 25 minutes.
+
+
+2.2.1 Closed on Christmas Day.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention that we are closed on Christmas Day, and suggest placing an order for another day.
+  2. Ask if they would like to schedule their order for before Christmas Day.
+  3. Suggest our holiday special pizzas for the days leading up to Christmas.
+  4. Confirm their preferred date for the order if they are planning for a holiday gathering.
+  5. Warn them about our closure on Christmas Day and remind them to plan ahead.
+  6. Offer to take their order for a later date to ensure they have pizza for their celebrations.
+  7. Recommend checking our holiday menu for seasonal items available before Christmas.
+
+[KNOWLEDGE FACTS]
+  1. Mario's Pizza has a special holiday menu featuring unique pizzas available only in December.
+  2. We typically see a 30% increase in orders during the week leading up to Christmas.
+  3. Our pizzas contain allergens such as wheat, dairy, and soy; make sure to inform customers with allergies.
+  4. Regular customers often pre-order their pizzas for Christmas parties weeks in advance to avoid disappointment.
+  5. We are closed on Christmas Day to give our staff time with their families, so be sure to communicate this to customers.
+
+
+2.2.2 Closed on New Year’s Day.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention to the customer that we are closed on New Year’s Day and suggest they place their order for New Year’s Eve instead.
+  2. Ask if they would like to add a dessert to their order for a festive celebration.
+  3. Suggest pairing their pizza with our garlic knots, which are a customer favorite during the holidays.
+  4. Warn the customer that orders placed close to closing time may have longer preparation times due to high demand on New Year's Eve.
+  5. If they express disappointment about our closure on New Year’s Day, offer to remind them about our special deals for New Year's Eve.
+  6. Confirm if they would like to pre-order for New Year’s Eve to ensure they have their favorite pizza ready for the celebration.
+  7. If they mention they are looking for something festive, recommend our holiday-themed pizzas available for New Year's Eve.
+
+[KNOWLEDGE FACTS]
+  1. A large cheese pizza has approximately 2000 calories total, which is about 250 calories per slice, making it a substantial choice for a party.
+  2. Preparation time for specialty pizzas may take an additional 10 minutes during peak hours like New Year's Eve.
+  3. Our garlic knots are one of the top-selling items, especially during the holiday season.
+  4. Regulars know that pre-ordering for New Year's Eve ensures they get their pizzas without long wait times.
+  5. The profit margin on our holiday-themed pizzas is higher due to their seasonal popularity.
+
+
+2.2.3 All other holidays: 12:00 PM – 8:00 PM.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, especially regarding gluten or dairy allergens.
+  2. Recommend adding garlic knots to their order for just $5.99, which pairs well with any pizza.
+  3. Mention that our desserts, like the cannoli, are a perfect way to finish off their meal.
+  4. Confirm the estimated preparation time for their order is about 15-20 minutes during peak hours.
+  5. Warn customers that the spicy pepperoni pizza contains red pepper flakes, which may not be suitable for everyone.
+  6. Suggest the Garden Salad as a lighter option if they express concern about calories or dieting.
+  7. If they seem unsure about the pizza, offer a sampler option to try a variety of flavors.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total, which is about 300 calories per slice.
+  2. The stuffed crust option adds an additional 5 minutes to the preparation time due to the extra baking required.
+  3. Our margherita pizza is a seasonal favorite during the summer months and is known for its fresh basil and tomatoes.
+  4. Regular customers often ask for extra sauce on their pizzas, a tip that can enhance the flavor experience.
+  5. The profit margin on specialty pizzas is about 60%, making them a great upsell opportunity.
+
+
+3. Menu Offerings
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask the customer if they are looking for a specific type of pizza or if they need recommendations.
+  2. If they mention a budget, route to our value menu options for more affordable choices.
+  3. Guide the customer smoothly to our sub-categories by saying, 'We have several options like classic, gourmet, and specialty pizzas. Which one interests you?'
+  4. If they express a preference for vegetarian options, suggest our Margherita or Veggie Supreme pizzas.
+  5. If the customer is in a rush, recommend our ready-to-go pizzas or suggest a quick order from our express menu.
+  6. Ask if they are ordering for a group or just for themselves to provide suitable portion sizes.
+  7. If the customer seems indecisive, offer to highlight the most popular items in the category to help them decide.
+
+[KNOWLEDGE FACTS]
+  1. Our Margherita pizza is one of the most popular items due to its fresh ingredients and classic flavor.
+  2. Families with children often prefer our cheese and pepperoni pizzas for their kid-friendly appeal.
+  3. Demand for veggie pizzas tends to increase during the summer months when people seek lighter options.
+  4. All pizzas can be customized with gluten-free crust for an additional charge, catering to dietary needs.
+  5. On average, a standard pizza takes about 15-20 minutes to prepare, while stuffed crust pizzas take an additional 5 minutes.
+
+3.1 Build-Your-Own Pizza
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a thin crust, thick crust, or stuffed crust pizza.
+  2. Guide them to choose their base sauce by asking if they prefer marinara, alfredo, or barbecue sauce.
+  3. If they mention 'budget', suggest our medium-sized build-your-own pizza which is a great value.
+  4. Offer a selection of toppings by asking if they would like to add vegetables, meats, or cheeses to their pizza.
+  5. If they seem rushed, recommend our popular pre-designed pizzas for quicker preparation.
+  6. Confirm if they are ordering for a group or themselves to tailor portion sizes accordingly.
+  7. If they seem indecisive, suggest starting with a cheese pizza and then adding their favorite toppings.
+
+[KNOWLEDGE FACTS]
+  1. The most popular build-your-own pizza among customers is the pepperoni and mushroom combination due to its classic flavor.
+  2. Families often prefer build-your-own pizzas because it allows each member to customize their meal according to their tastes.
+  3. Peak demand for build-your-own pizzas typically occurs on weekends and during major sporting events.
+  4. Build-your-own pizzas generally take about 15-20 minutes to prepare, depending on the complexity of the order.
+  5. Experienced employees know that offering a mix of toppings can encourage customers to try new flavors and increase order size.
+
+3.1.1 Sizes and Base Prices
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they are interested in a small, medium, or large pizza to narrow down their preference.
+  2. If they mention a budget, route to our value menu options to provide cost-effective choices.
+  3. Guide the customer through our pizza sizes by saying, 'We have small, medium, and large. Would you like to hear about the differences?'
+  4. If they express a preference for meat, suggest the Meat Lovers pizza; if they want vegetarian, suggest the Garden Veggie pizza.
+  5. If the customer is in a rush, recommend our pre-made pizzas for quicker service.
+  6. Ask if they are ordering for a group or just themselves to tailor size recommendations accordingly.
+  7. If the customer seems indecisive, offer to describe our most popular pizzas to help them choose.
+
+[KNOWLEDGE FACTS]
+  1. The large pepperoni pizza is our best-seller due to its classic flavor and generous toppings.
+  2. Families with children often prefer larger pizzas that allow for sharing, while singles may opt for smaller sizes.
+  3. Our large pepperoni pizza has approximately 2400 calories total, which is about 300 calories per slice.
+  4. All pizzas can be customized with gluten-free crusts, but be aware that it may add 5 minutes to preparation time.
+  5. Experienced employees know that the stuffed crust option is popular among customers looking for a hearty meal, adding about 5 minutes to the prep time.
+
+
+3.1.1.1 Small (10 inch) – $9.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for an additional cost.
+  2. Recommend pairing the small pizza with a side of garlic knots for a complete meal.
+  3. Mention that the small pizza is perfect for a light meal or for kids.
+  4. Warn the customer that this pizza contains gluten and dairy, which may not be suitable for those with allergies.
+  5. Suggest trying our special dipping sauces for just $0.50 each to enhance the flavor.
+  6. Confirm the preparation time is approximately 15 minutes for this small pizza.
+  7. If they express concern about calories, pivot to our low-calorie options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. The small (10 inch) pizza contains approximately 800 calories total.
+  2. Preparation time for the small pizza is about 15 minutes in a standard oven.
+  3. This small pizza is a popular choice for children's meals due to its size.
+  4. Regulars know that the small pizza is often customizable with daily special toppings.
+  5. The profit margin on the small pizza is higher when extra toppings are added.
+
+
+3.1.1.2 Medium (12 inch) – $12.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for an additional charge.
+  2. Suggest pairing the medium pizza with a side of garlic knots for a complete meal.
+  3. Mention that the medium pizza has approximately 1,800 calories in total.
+  4. Warn the customer that this pizza contains gluten and dairy allergens.
+  5. Confirm the estimated preparation time is about 15-20 minutes.
+  6. If they mention they're looking for something lighter, pivot to our Garden Salad.
+  7. Recommend that customers trying the pizza for the first time should go for classic toppings like pepperoni or cheese.
+
+[KNOWLEDGE FACTS]
+  1. The medium pizza contains approximately 1,500 calories in total, making it a satisfying meal choice.
+  2. It takes approximately 15-20 minutes to prepare a medium pizza.
+  3. Preparation for the medium pizza takes about 15 minutes in the oven at 475°F.
+  4. Regulars know that customizing the pizza with half toppings can save money and reduce calories.
+  5. The cost of a medium pizza is $12.99, providing a good profit margin for the business.
+
+
+3.1.1.3 Large (14 inch) – $15.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as this large pizza contains gluten and dairy.
+  2. Recommend adding garlic knots for just $5.99 if they order the large pizza.
+  3. Mention that the large pizza pairs perfectly with our house salad for a refreshing side.
+  4. Confirm that the preparation time for the large pizza is approximately 15 minutes.
+  5. Warn the customer that this large pizza can be high in calories, approximately 2400 total, which might not fit into a diet plan.
+  6. Suggest a smaller size if they mention they are watching their portion sizes or calories.
+  7. If they express concern about allergens, clarify that the large pizza contains dairy and may have cross-contamination with nuts.
+
+[KNOWLEDGE FACTS]
+  1. A large pizza typically contains around 2400 calories total, which is about 300 calories per slice.
+  2. Preparation time for a large pizza is usually about 15 minutes, depending on toppings.
+  3. A large cheese pizza contains approximately 2400 calories in total, which breaks down to about 300 calories per slice.
+  4. A large pizza contains approximately 2,400 calories total, with about 300 calories per slice, making it a filling option for sharing.
+  5. The large pizza is a favorite for family meals, especially on weekends, making it a great choice for gatherings.
+
+
+3.1.1.4 Extra Large (16 inch) – $18.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they want to add extra toppings for $1.50 each to enhance their Extra Large pizza experience.
+  2. Mention that our Extra Large pizza is perfect for gatherings or parties, making it great for celebrations.
+  3. Warn the customer that this pizza contains gluten and dairy, so it's not suitable for those with gluten intolerance or lactose sensitivity.
+  4. Suggest a side of our Garlic Knots, as they pair wonderfully with the Extra Large pizza.
+  5. Confirm the estimated preparation time is approximately 20 minutes for the Extra Large pizza.
+  6. If they express concern about calories, recommend our Garden Salad as a lighter option alongside the pizza.
+  7. Offer a discount on the second Extra Large pizza if they order two, as it's a great deal for larger groups.
+
+[KNOWLEDGE FACTS]
+  1. The Extra Large (16 inch) pizza has approximately 3200 calories total (400 calories per slice).
+  2. Preparation time for the Extra Large pizza is about 20 minutes in a standard oven at 425°F.
+  3. This size is one of our best sellers, especially during sports events and weekends.
+  4. Regular customers know that adding stuffed crust increases prep time by an additional 5 minutes.
+  5. The profit margin on the Extra Large pizza is higher compared to smaller sizes, making it a great value for customers.
+
+
+3.1.2 Crust Options
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer thin, thick, or stuffed crust for their pizza.
+  2. If they mention a budget, suggest our classic hand-tossed crust as a cost-effective option.
+  3. Guide the customer towards the crust sub-categories by stating, 'We have several crust options; would you like to know about our specialty crusts?'
+  4. If they ask for a healthier option, recommend our thin crust as a lower-calorie choice.
+  5. If the customer is in a rush, suggest our hand-tossed crust, which has a quicker preparation time.
+  6. If they are ordering for a group, offer the option of a large pizza with multiple crust types to satisfy everyone's preference.
+  7. If the customer seems indecisive, mention, 'Our stuffed crust is a fan favorite, and it really enhances the flavor of the pizza.'
+
+[KNOWLEDGE FACTS]
+  1. The stuffed crust is one of the most popular options due to its unique taste and extra cheese, but it adds an additional 5 minutes to prep time.
+  2. Families often prefer thicker crusts for a more filling meal, while health-conscious customers lean towards thin crust.
+  3. Sales of thin crust typically increase during the summer months when customers are more health-conscious.
+  4. All crusts are made fresh daily, ensuring quality and taste but may vary in prep times.
+  5. Experienced employees know that offering a variety of crusts can significantly enhance upselling opportunities.
+
+
+3.1.2.1 Regular Crust – Included
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as our regular crust contains gluten.
+  2. Recommend adding extra toppings like pepperoni or mushrooms for an additional charge.
+  3. Mention that our regular crust pairs excellently with marinara dipping sauce.
+  4. Confirm that the preparation time for a regular crust pizza is approximately 15 minutes.
+  5. Warn the customer that our regular crust is not suitable for customers with celiac disease due to gluten content.
+  6. Suggest the Garden Salad as a lighter alternative if they are watching their calories.
+  7. If they express concern about calories, offer to provide nutritional information for the regular crust.
+
+[KNOWLEDGE FACTS]
+  1. A slice of regular crust pizza contains approximately 250 calories.
+  2. The regular crust takes about 15 minutes to prepare and is baked at 475°F.
+  3. Regular crust is one of our best-selling options, especially during weekends.
+  4. Regular customers often customize their regular crust with unique topping combinations.
+  5. The cost of the regular crust is $10 for a medium size, with a margin of around 60%.
+
+
+3.1.2.2 Thin Crust – Included
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they are looking for a lighter option; suggest the Thin Crust as a healthier choice.
+  2. Mention that the Thin Crust has fewer calories compared to traditional crusts, making it a good option for those watching their intake.
+  3. If they order a Thin Crust pizza, suggest adding a side of garlic knots for a perfect pairing.
+  4. Confirm the preparation time for the Thin Crust is approximately 10-12 minutes to ensure they know when to expect it.
+  5. Warn the customer that the Thin Crust contains gluten; ask if they have any allergies or dietary restrictions.
+  6. Suggest the Thin Crust for customers who are dieting or looking for a healthier pizza option.
+  7. If a customer expresses concern about flavor, offer to customize toppings to enhance their experience with the Thin Crust.
+
+[KNOWLEDGE FACTS]
+  1. A Thin Crust pizza typically has about 150 calories per slice, compared to 200-300 calories per slice for regular crusts.
+  2. Preparation time for a Thin Crust pizza is around 10-12 minutes, as it requires less baking time than thicker crusts.
+  3. Thin Crust pizzas are popular among health-conscious customers and are often ordered during lunch hours.
+  4. Regulars know that the Thin Crust pairs exceptionally well with lighter toppings like veggies or grilled chicken.
+  5. Thin Crust has a lower food cost compared to traditional crusts, providing a higher margin for the restaurant.
+
+
+3.1.2.3 Stuffed Crust – Additional $2.00
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to upgrade their pizza to a stuffed crust for an additional $2.00.
+  2. Mention that the stuffed crust option adds a delicious cheese-filled border to their pizza.
+  3. Recommend pairing the stuffed crust pizza with a side of marinara sauce for dipping.
+  4. Confirm that the stuffed crust option adds approximately 5 minutes to the preparation time.
+  5. Warn the customer that the stuffed crust is higher in calories, so it may not be suitable for those on a strict diet.
+  6. Suggest the stuffed crust to customers who are celebrating or looking for something indulgent.
+  7. If a customer expresses concern about dietary restrictions, pivot by asking if they would prefer a gluten-free option.
+
+[KNOWLEDGE FACTS]
+  1. A stuffed crust pizza typically contains an additional 300 calories compared to a traditional crust.
+  2. The stuffed crust takes about 5 minutes longer to prepare than a regular pizza.
+  3. Stuffed crust pizza is one of our best-selling items, especially during family gatherings and celebrations.
+  4. Regular customers often know that the stuffed crust can be customized with different cheese fillings upon request.
+  5. The cost of the stuffed crust option adds an extra $2.00, which helps maintain our profit margin on premium items.
+
+
+3.1.3 Toppings (Each $1.50)
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they would like to customize their pizza with additional toppings for $1.50 each.
+  2. Mention popular toppings like pepperoni and mushrooms to guide their decision.
+  3. If they mention they are on a budget, recommend sticking to the classic toppings.
+  4. Suggest pairing their pizza choice with a topping that complements their selection.
+  5. If they seem indecisive, offer to list our most popular toppings to help them decide.
+  6. Guide them through the available toppings by asking if they prefer meats or vegetables.
+  7. If they mention they are in a rush, recommend our pre-set topping combinations for quicker selection.
+
+[KNOWLEDGE FACTS]
+  1. Pepperoni is the most popular topping, often chosen for its classic flavor and appeal.
+  2. Families often prefer a mix of toppings that cater to both kids and adults, like cheese and pepperoni.
+  3. During the Super Bowl season, topping sales increase as customers order more pizzas for parties.
+  4. All toppings are $1.50 each, and customers should be informed of this to manage expectations.
+  5. Experienced employees know that offering a topping that enhances the base flavor can lead to upsells.
+
+
+3.1.3.1 Pepperoni
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra cheese for $1.50 to their pepperoni pizza.
+  2. Mention that the pepperoni pizza contains dairy and gluten allergens.
+  3. Recommend pairing the pepperoni pizza with a refreshing side salad or garlic knots.
+  4. Confirm that the preparation time for a pepperoni pizza is approximately 15-20 minutes.
+  5. Warn the customer that this item is not suitable for those on a low-fat diet.
+  6. Suggest upgrading to a large size for better value, as it offers more slices for just a small increase in price.
+  7. If they express concern about calories, pivot to suggesting a smaller size or a different item like the Veggie Pizza.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total (300 calories per slice).
+  2. The pepperoni is cooked to a crispy texture at 450°F for optimal flavor.
+  3. Pepperoni pizza is one of our best-selling items and is particularly popular on weekends.
+  4. Regular customers often know to ask for 'double pepperoni' for an extra kick.
+  5. The profit margin on a pepperoni pizza is higher compared to other specialty pizzas, making it a great upsell.
+
+
+3.1.3.2 Mushrooms
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add mushrooms to their pizza for an extra charge.
+  2. Mention that mushrooms are low in calories, making them a great topping choice for those watching their intake.
+  3. Suggest pairing mushrooms with extra cheese for a richer flavor experience.
+  4. Confirm that our mushrooms are gluten-free and safe for most dietary restrictions, but warn customers with specific allergies.
+  5. Recommend the Garden Salad as a healthy side option if they are looking for something light.
+  6. If they seem hesitant about mushrooms, suggest trying them on a half pizza to see if they like the flavor.
+  7. Warn customers that our mushrooms are not suitable for those with a mushroom allergy.
+
+[KNOWLEDGE FACTS]
+  1. Mushrooms contain about 15 calories per cup and are a good source of Vitamin D.
+  2. Preparation time for adding mushrooms is typically 2-3 minutes, as they are pre-sliced and ready to go.
+  3. Mushrooms are a popular choice among our regulars, especially in the fall season.
+  4. Customers often don’t realize that mushrooms can enhance the umami flavor in their pizza.
+  5. The cost for mushrooms as a topping is approximately $0.75, which provides a good margin for the restaurant.
+
+
+3.1.3.3 Green Peppers
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add green peppers to their pizza for a fresh, crunchy taste.
+  2. Recommend pairing green peppers with our Italian sausage pizza for a flavorful combination.
+  3. Mention that green peppers are a great source of vitamins A and C, perfect for those looking to add some nutrients to their meal.
+  4. Warn customers that green peppers may not be suitable for those with certain allergies or sensitivities to nightshades.
+  5. Suggest trying our green pepper topping in combination with olives for a savory twist.
+  6. If they express concern about calories, confirm that adding green peppers is a low-calorie option that enhances flavor without adding much fat.
+  7. Offer to customize their pizza with extra green peppers for only $1.00 more.
+
+[KNOWLEDGE FACTS]
+  1. One serving of green peppers has about 24 calories and contains no fat.
+  2. Green peppers are an allergen for some individuals who are sensitive to nightshades.
+  3. Green peppers take approximately 2 minutes to prepare and chop before being added to pizzas.
+  4. Regular customers know that green peppers are one of the most popular veggie toppings, especially during the summer months.
+  5. Adding green peppers to a pizza has a low cost, increasing the overall margin while keeping the price reasonable for customers.
+
+
+3.1.3.4 Onions
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add onions to their pizza for extra flavor.
+  2. Recommend our signature onion rings as a side if they order a pizza.
+  3. Mention that onions are a great source of antioxidants but may cause allergic reactions in some individuals.
+  4. Warn customers that our caramelized onions are cooked in butter, which contains dairy.
+  5. Suggest pairing the onion topping with a spicy sauce for a kick.
+  6. Confirm the preparation time for pizzas with onions is approximately 15-20 minutes.
+  7. If the customer expresses concern about calories, pivot to our Veggie Delight pizza, which has fewer calories.
+
+[KNOWLEDGE FACTS]
+  1. Caramelized onions add approximately 45 calories per serving, making them a flavorful enhancement without overwhelming the dish.
+  2. Our caramelized onions are prepared through a slow cooking process that develops their sweetness, requiring about 30 minutes, so let customers know to expect a slight delay.
+  3. Onions are a top-selling topping during the summer months, especially for customers ordering BBQ pizzas.
+  4. Regulars know that adding onions can enhance the overall flavor profile of their pizza.
+  5. Onion toppings add about $0.75 to the cost of a pizza with a decent margin for the restaurant.
+
+
+3.1.3.5 Olives
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add olives to their pizza for a savory touch.
+  2. Suggest pairing olives with a Garden Salad for a balanced meal.
+  3. Warn the customer that olives contain sodium and may not be suitable for those on a low-sodium diet.
+  4. Mention that olives can enhance the flavor of a Mediterranean pizza, especially if they enjoy bold flavors.
+  5. If they order a specialty pizza, recommend adding olives for an extra $1.00.
+  6. Confirm if they have any allergies, as olives may contain traces of allergens depending on the preparation process.
+  7. Offer to provide a small side of olives as a topping option if they are unsure.
+
+[KNOWLEDGE FACTS]
+  1. A serving of olives (about 5 olives) contains approximately 50 calories and provides healthy fats, but also contains about 115 mg of sodium.
+  2. Preparation time for adding olives is minimal, typically around 1-2 minutes.
+  3. Olives are a popular topping, especially in Mediterranean and specialty pizzas, but they are not a top seller.
+  4. Regular customers know that olives can be a great source of antioxidants and are often recommended for a heart-healthy diet.
+  5. The cost of olives as a topping is low, contributing to a higher profit margin when upsold.
+
+
+3.1.3.6 Sausage
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra sausage for $1.50 to enhance their pizza.
+  2. Mention that our sausage contains pork and may not be suitable for customers avoiding red meat.
+  3. Recommend pairing the sausage pizza with our creamy garlic dipping sauce for an extra flavor kick.
+  4. Confirm that the preparation time for the sausage pizza is approximately 15-20 minutes.
+  5. Warn the customer that our sausage pizza has a higher fat content, which may not align with their dietary goals.
+  6. Suggest the sausage pizza for customers looking for a hearty meal, especially those celebrating with friends.
+  7. If a customer expresses concern about calories, pivot to our lighter options like the Margherita pizza.
+
+[KNOWLEDGE FACTS]
+  1. A slice of sausage pizza contains approximately 300 calories, with 25g of fat and 4g of sugar.
+  2. Sausage is prepared in-house and requires 15 minutes to cook before being added to the pizza.
+  3. The sausage pizza is one of our best-selling items, especially during the winter months.
+  4. Regulars know that adding jalapeños to the sausage pizza gives it a great spicy kick.
+  5. The cost of sausage is $1.00 per topping, contributing to a higher profit margin for the restaurant.
+
+
+3.1.3.7 Bacon
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if the customer would like to add bacon to their pizza for an extra $1.50.
+  2. Warn the customer that this item contains pork and may not be suitable for those with dietary restrictions.
+  3. Suggest pairing the bacon pizza with ranch dressing for a delicious dip.
+  4. Mention that the preparation time for a bacon pizza is approximately 15 minutes.
+  5. If the customer expresses concern about calories, pivot to our Garden Salad instead.
+  6. Confirm any allergies the customer may have, especially to pork or gluten.
+  7. If they order a pizza, recommend adding a side of garlic knots to enhance their meal.
+
+[KNOWLEDGE FACTS]
+  1. A serving of bacon contains about 42 calories and 3.3 grams of fat per slice.
+  2. Bacon is a popular topping and is one of our best-selling items on pizzas.
+  3. The bacon is cooked at 350 degrees Fahrenheit for 15 minutes before being added to pizzas.
+  4. Regulars often know that our bacon is sourced locally and has a unique smoky flavor.
+  5. Adding bacon increases the total calorie count of a pizza by approximately 150 calories.
+
+
+3.1.3.8 Pineapple
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they are aware that our pineapple contains natural sugars and is a great source of vitamin C.
+  2. Suggest adding pineapple to their pizza for a sweet and tangy flavor that complements savory toppings.
+  3. Mention that pineapple goes great with our Canadian Bacon or Ham for a classic Hawaiian pizza.
+  4. Confirm that the preparation time for a pizza with pineapple is about 15-20 minutes, depending on the crust choice.
+  5. Warn the customer that some people may have a sensitivity to pineapple, so inquire if they have any allergies.
+  6. If they express interest in a lighter option, offer the option of pineapple on a thin crust pizza or as a topping on a salad.
+  7. Ask if they want to try our pineapple dessert option, which is a refreshing way to end their meal.
+
+[KNOWLEDGE FACTS]
+  1. A serving of pineapple adds about 80 calories and contains 17 grams of natural sugar, making it a sweet addition to your meal.
+  2. Pineapple is a popular topping year-round, especially in summer months and during Hawaiian-themed promotions.
+  3. Regular customers know that pairing pineapple with spicy jalapeños can create a delicious sweet and spicy contrast.
+  4. Pineapple is a popular choice for pizzas, especially during summer months, as it complements savory flavors.
+  5. Pineapple as a topping has a good profit margin of around 70%, making it a valuable upsell option.
+
+
+3.1.3.9 Jalapenos
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add jalapenos to their pizza for a spicy kick.
+  2. Suggest pairing jalapenos with a side of ranch dressing for a cooling contrast.
+  3. Mention that jalapenos can add an extra layer of flavor to any pizza, especially meat lovers.
+  4. Warn customers that jalapenos may cause discomfort for those sensitive to spicy foods.
+  5. Confirm if the customer is aware that jalapenos are low in calories but high in flavor, making them a great choice.
+  6. Recommend adding jalapenos if they enjoy bold and spicy flavors in their meal.
+  7. If a customer expresses concern about spice, suggest milder options like bell peppers instead.
+
+[KNOWLEDGE FACTS]
+  1. Jalapenos contain approximately 4 calories per pepper and are low in fat.
+  2. Preparation time for adding jalapenos is minimal, usually under 1 minute.
+  3. Jalapenos are a popular topping, particularly for our 'Spicy Meat Feast' pizza during the summer months.
+  4. Regulars know that jalapenos can be customized in quantity, allowing for a milder or spicier experience.
+  5. Jalapenos have a good profit margin, costing us very little compared to the value they add to a pizza.
+
+
+3.1.3.10 Extra Cheese
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra cheese for $1.50 to enhance their pizza experience.
+  2. Suggest pairing the extra cheese with our garlic bread for a delightful combination.
+  3. Confirm that the extra cheese will add approximately 100 calories per slice.
+  4. Mention that extra cheese is a great option for celebrations or parties, enhancing the enjoyment.
+  5. Warn the customer that while extra cheese is delicious, it may not be suitable for those on a low-fat diet.
+  6. If they express interest in healthier options, pivot the conversation towards our veggie toppings instead.
+  7. Offer to customize their pizza with extra cheese and any of our other toppings for a personalized touch.
+
+[KNOWLEDGE FACTS]
+  1. Extra cheese adds about 100 calories per slice and contains dairy allergens.
+  2. The preparation time for adding extra cheese is immediate; it will be ready as soon as the pizza comes out of the oven.
+  3. Extra cheese is one of our best-selling add-ons, especially popular during party seasons.
+  4. Regulars often know that adding extra cheese can significantly enhance the flavor profile of a simple pizza.
+  5. The cost of extra cheese is $1.50, which has a high margin for the restaurant, making it a great upsell opportunity.
+
+
+3.2 Specialty Pizzas
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a classic or gourmet specialty pizza to narrow down their choices.
+  2. If they mention a budget, route to our value specialty pizzas that are under $15.
+  3. Guide the customer by listing the types of specialty pizzas we offer before diving into specific options.
+  4. If a customer mentions they love spicy food, suggest the Spicy Italian as a top choice.
+  5. If they are in a rush, recommend our quick bake specialty pizzas that can be ready in under 15 minutes.
+  6. Ask if they are ordering for a group or just themselves to help suggest the right size.
+  7. If the customer seems indecisive, offer a sample of two specialty pizzas to help them choose.
+
+[KNOWLEDGE FACTS]
+  1. The most popular specialty pizza is the Margherita due to its fresh ingredients and classic flavor.
+  2. Families often prefer larger specialty pizzas, while young adults typically enjoy individual sizes.
+  3. Demand for specialty pizzas peaks during the Super Bowl and holidays, so highlight any specials during these times.
+  4. Specialty pizzas with gluten-free crusts are available, but they may take an additional 5 minutes to prepare.
+  5. Experienced employees know that the BBQ Chicken specialty pizza has a unique flavor profile that attracts customers looking for something different.
+
+3.2.1 Margherita
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a classic Margherita or a variation with extra toppings.
+  2. If they mention a budget, route to our special deals or combo offers available today.
+  3. Guide the customer through our sub-category options, highlighting the differences in toppings and sizes.
+  4. If they seem unsure, suggest the Margherita as a popular choice and offer to add extra ingredients based on their preferences.
+  5. If they mention being in a rush, recommend the Margherita pizza as it's quick to prepare and always a crowd-pleaser.
+  6. Inquire if they are ordering for a group or just for themselves, to suggest appropriate sizes.
+  7. If they seem indecisive, confirm their favorite toppings and help them customize their Margherita pizza.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita pizza is one of our most popular items due to its simple yet flavorful ingredients: fresh mozzarella, basil, and tomato sauce.
+  2. Families often prefer the Margherita pizza for its mild flavor, making it a favorite among kids and adults alike.
+  3. Demand for Margherita pizzas tends to peak during summer months when customers are looking for lighter options.
+  4. Our Margherita pizzas are made with fresh ingredients and can be made gluten-free upon request, catering to dietary restrictions.
+  5. Preparation time for a Margherita pizza is approximately 10-12 minutes, making it a quick option for customers.
+
+
+3.2.1.1 Ingredients: Tomato, mozzarella, basil.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, mentioning that our Margherita pizza contains dairy and gluten.
+  2. Suggest adding extra basil for a fresh flavor boost if they order the Margherita pizza.
+  3. Mention that the Margherita pizza pairs wonderfully with a side of garlic knots.
+  4. Confirm that the preparation time for the Margherita pizza is approximately 15 minutes.
+  5. Warn the customer that if they are watching their calorie intake, the Margherita pizza has around 800 calories for a medium size.
+  6. Offer a small Garden Salad as a healthier side option if they express concern about calories.
+  7. If they mention they are celebrating, suggest the Margherita pizza for a classic taste that's loved by many.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita pizza contains approximately 800 calories for a medium size, with about 30 grams of fat.
+  2. Preparation for the Margherita pizza takes about 15 minutes at a temperature of 475°F.
+  3. The Margherita pizza is one of our best sellers, especially during the summer months.
+  4. Regulars often know that the Margherita pizza tastes even better with a drizzle of balsamic glaze, which we offer.
+  5. The cost of making a Margherita pizza has a favorable margin, allowing us to offer it at a competitive price point.
+
+
+3.2.1.2 Small – $11.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Warn the customer that the Small Pizza contains gluten and dairy, which may affect those with allergies.
+  2. Suggest adding a side of garlic knots for $4.99 to enhance their meal experience.
+  3. Ask if they would like to try our house-made marinara sauce for dipping, which pairs wonderfully with the pizza.
+  4. Confirm the estimated preparation time is about 15 minutes for the Small Pizza.
+  5. If the customer mentions they are on a diet, pivot and recommend our Garden Salad instead.
+  6. Mention that the Small Pizza is perfect for a quick lunch or snack, ideal for individuals or small appetites.
+  7. If the customer seems unsure, offer to customize their pizza with extra toppings at just $1.50 each.
+
+[KNOWLEDGE FACTS]
+  1. The Small Pizza has approximately 1,200 calories total (150 calories per slice).
+  2. Preparation time for the Small Pizza is about 15 minutes, baked at 450°F.
+  3. This size is one of our best sellers during lunch hours due to its affordability.
+  4. Regular customers know that ordering a Small Pizza with extra cheese is a popular choice.
+  5. The cost of the Small Pizza provides a good margin for us, making it a value option for customers.
+
+
+3.2.1.3 Medium – $14.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions or allergies before taking their order.
+  2. If they order a medium pizza, suggest adding a side of garlic knots for $5.99.
+  3. Mention that the medium pizza pairs well with a refreshing soda or iced tea.
+  4. Confirm the preparation time is approximately 15-20 minutes for a medium pizza.
+  5. Warn the customer that this medium pizza contains gluten and dairy.
+  6. Suggest the medium pizza for families or groups as it serves 2-3 people.
+  7. If they express concern about calories, pivot to our Garden Salad as a healthier option.
+
+[KNOWLEDGE FACTS]
+  1. A medium pizza has approximately 1,600 calories total (200 calories per slice).
+  2. Preparation time for a medium pizza is around 15-20 minutes in a standard oven at 450°F.
+  3. The medium pizza is one of our best sellers, especially during weekend nights.
+  4. Regulars know that adding a second topping is often just $2 more, increasing value.
+  5. The cost of ingredients for a medium pizza allows for a healthy profit margin, ensuring good value for customers.
+
+
+3.2.1.4 Large – $17.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as our large pizza may contain allergens like gluten and dairy.
+  2. Suggest adding a side of garlic knots for just $4.99 if they order the large pizza.
+  3. Mention that the large pizza typically has a preparation time of 15-20 minutes.
+  4. Warn the customer that if they're watching their calorie intake, a large pizza has approximately 2400 calories total.
+  5. Confirm if they want to try our signature dipping sauces with their large pizza order.
+  6. If they express concern about portion size, recommend sharing the large pizza with a friend.
+  7. Offer a drink pairing, like a 2-liter soda, which goes great with the large pizza.
+
+[KNOWLEDGE FACTS]
+  1. A large pizza has approximately 2400 calories total, averaging 300 calories per slice.
+  2. Preparation time for a large pizza is about 15-20 minutes, depending on toppings.
+  3. A large pizza typically has around 2400 calories total, which is about 300 calories per slice.
+  4. A large pizza has approximately 2400 calories total (300 calories per slice), so it’s great for sharing.
+  5. The large pizza is our best-selling item, especially during game nights, making it a safe recommendation for large orders.
+
+
+3.2.2 BBQ Chicken
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a classic BBQ Chicken or a BBQ Chicken with extra toppings.
+  2. If the customer mentions a budget, suggest the BBQ Chicken Pizza as it offers great value.
+  3. Guide the customer to our BBQ Chicken sub-categories like BBQ Chicken Wings or BBQ Chicken Sandwich.
+  4. If they seem unsure, suggest the BBQ Chicken Pizza as a crowd-pleaser for group orders.
+  5. If they mention being in a rush, recommend the BBQ Chicken Pizza as it has a quick preparation time of about 15 minutes.
+  6. Confirm if they want to add any sides like garlic knots or salads to their BBQ Chicken order.
+  7. Offer to customize their BBQ Chicken pizza with extra cheese or different crust options.
+
+[KNOWLEDGE FACTS]
+  1. The BBQ Chicken Pizza is one of our top-selling items due to its unique flavor profile and popularity among customers.
+  2. Families and groups are common customer segments for BBQ Chicken, often looking for shareable options.
+  3. During summer months, BBQ Chicken items see a spike in demand due to outdoor gatherings and events.
+  4. All BBQ Chicken items can be made gluten-free upon request, catering to dietary restrictions.
+  5. Preparation time for the BBQ Chicken Pizza is approximately 15 minutes, while wings take about 10 minutes.
+
+
+3.2.2.1 Ingredients: BBQ sauce, chicken, red onion.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if the customer would like to add a side of garlic knots for just $4.00 when they order the BBQ chicken pizza.
+  2. Warn the customer that this pizza contains allergens, specifically chicken and potential cross-contamination with gluten.
+  3. Mention that the BBQ chicken pizza is best enjoyed with a refreshing side salad or soda.
+  4. Confirm with the customer that the preparation time for the BBQ chicken pizza is approximately 15 minutes.
+  5. Suggest that if the customer is looking for something lighter, they might prefer the Veggie Pizza instead.
+  6. Offer to customize their BBQ chicken pizza with additional toppings for just $1.00 each.
+  7. If the customer expresses concern about calories, pivot to the Grilled Chicken Salad.
+
+[KNOWLEDGE FACTS]
+  1. The BBQ chicken pizza has approximately 300 calories per slice, with high sugar content from the BBQ sauce.
+  2. Preparation of the BBQ chicken pizza takes about 15 minutes, baked at 450°F.
+  3. This item is a best seller, especially during summer months and sports events.
+  4. Regular customers know that adding extra cheese on the BBQ chicken pizza enhances the flavor profile significantly.
+  5. The cost of the ingredients for this pizza allows for a good profit margin, making it a valuable item on the menu.
+
+
+3.2.2.2 Small – $12.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions or allergies, especially since the Small pizza contains gluten and dairy.
+  2. Recommend adding a side of garlic knots for just $4.99 if they order the Small pizza.
+  3. Mention that the Small pizza pairs great with a refreshing Garden Salad.
+  4. Confirm that the preparation time for the Small pizza is approximately 15 minutes.
+  5. Warn the customer that this pizza may not be suitable for those on a low-calorie diet, as it contains around 900 calories.
+  6. Suggest the Small pizza for customers who are looking for a quick meal or a light snack.
+  7. Ask if they are interested in adding extra toppings for just $1.50 each.
+
+[KNOWLEDGE FACTS]
+  1. The Small pizza contains approximately 900 calories, with 36 grams of fat and 60 grams of carbohydrates.
+  2. Preparation time for the Small pizza is about 15 minutes, baked at 475°F.
+  3. This Small pizza is one of our best-sellers, especially among first-time customers.
+  4. Preparation for the Small pizza typically takes about 15 minutes, as we make each pizza fresh to order.
+  5. The profit margin on the Small pizza is around 60%, making it a great value for both customers and the restaurant.
+
+
+3.2.2.3 Medium – $15.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions as this medium pizza contains gluten and dairy.
+  2. Recommend adding a side of garlic knots for just $4.99 when they order the medium pizza.
+  3. Mention that this medium pizza pairs perfectly with our fresh Garden Salad.
+  4. Confirm that the medium pizza has a preparation time of approximately 15 minutes.
+  5. Warn the customer that if they are watching their calorie intake, this pizza contains around 1,200 calories.
+  6. Suggest that if they are celebrating, they might enjoy our dessert options like the chocolate lava cake.
+  7. Offer a gluten-free crust option if they express concerns about gluten.
+
+[KNOWLEDGE FACTS]
+  1. The medium pizza has approximately 1,800 calories total (225 calories per slice).
+  2. Preparation time for the medium pizza is about 15 minutes in a standard oven at 450°F.
+  3. Preparation typically takes about 15 minutes, ensuring fresh and hot pizzas every time.
+  4. Our medium pizza is a top seller during game nights, making it a popular choice for gatherings.
+  5. Regulars know that customizing with extra toppings often enhances the flavor and experience.
+
+
+3.2.2.4 Large – $18.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as our large pizza contains gluten and dairy.
+  2. Suggest adding a 2-liter soda for $2.99 when they order the large pizza.
+  3. Mention that the large pizza pairs well with our Garlic Knots for a perfect appetizer.
+  4. Confirm that the preparation time for the large pizza is about 15 minutes.
+  5. Warn the customer that the large pizza contains high sodium levels, which may not be suitable for those on a low-sodium diet.
+  6. If they express concerns about portion sizes, recommend our large pizza as great for sharing during parties or gatherings.
+  7. Offer to customize the toppings on the large pizza to better fit their taste preferences.
+
+[KNOWLEDGE FACTS]
+  1. A large pizza has approximately 2400 calories total, which is about 300 calories per slice.
+  2. Preparation time for a large pizza is around 15 minutes, and it is baked at 475°F.
+  3. The large pizza is one of our best sellers, especially during the weekend rush.
+  4. Regulars know that they can request extra toppings at a discounted price if they order a large pizza.
+  5. The profit margin on a large pizza is about 65%, making it an important item for our sales.
+
+
+3.2.3 Veggie Supreme
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a thin crust or a hand-tossed crust for their Veggie Supreme pizza.
+  2. Recommend adding extra toppings like mushrooms or olives if they mention they enjoy a variety of vegetables.
+  3. Mention the option of a medium Veggie Supreme at a discounted price when they seem budget-conscious.
+  4. If they express a preference for healthier options, suggest the Veggie Supreme with no cheese.
+  5. Guide them through the available sizes, asking if they need it for a group or just for themselves.
+  6. If they appear indecisive, offer to summarize the ingredients in the Veggie Supreme to help them decide.
+  7. Confirm their order details before finalizing, ensuring they are satisfied with their choices.
+
+[KNOWLEDGE FACTS]
+  1. The Veggie Supreme is popular among health-conscious customers due to its variety of vegetables and lower calorie count compared to meat pizzas.
+  2. Common customer segments for this category include vegetarians and families looking for healthier meal options.
+  3. Demand for Veggie Supreme tends to peak during the spring and summer months when customers are more health-focused.
+  4. The Veggie Supreme can be customized to be vegan by omitting cheese, which is a common request.
+  5. Preparation time for the Veggie Supreme is typically 12-15 minutes, slightly longer if additional customizations are requested.
+
+
+3.2.3.1 Ingredients: Peppers, mushrooms, onions, olives, tomatoes.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra olives for 50 cents.
+  2. Recommend our house-made marinara sauce as a dipping option for the peppers.
+  3. Mention that this item is gluten-free and suitable for those with gluten allergies.
+  4. Warn the customer that the mushrooms may not be suitable for those allergic to molds.
+  5. Suggest pairing this item with a refreshing lemonade for a perfect balance.
+  6. Confirm the estimated preparation time is approximately 15 minutes for this item.
+  7. If they show concern about calories, pivot the conversation to our lighter options.
+
+[KNOWLEDGE FACTS]
+  1. A serving of peppers and onions adds approximately 25 calories to your pizza, keeping your meal light and flavorful.
+  2. Our vegetable toppings, including mushrooms and olives, are prepared fresh and add a satisfying crunch to your pizza while being low in calories.
+  3. This item is one of our top-selling vegetarian options, especially during the summer months.
+  4. The combination of peppers, mushrooms, and olives is one of our best-selling topping choices, especially during the summer months.
+  5. Preparation for the veggie toppings includes sautéing them on the grill at medium heat for 8-10 minutes to lock in flavor.
+
+
+3.2.3.2 Small – $11.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for just $1.50 more.
+  2. Warn the customer that the small pizza contains gluten and dairy allergens.
+  3. Suggest pairing the small pizza with a side of garlic knots for a complete meal.
+  4. Mention that the preparation time for the small pizza is approximately 15 minutes.
+  5. Offer to substitute a healthier option like a whole wheat crust if they express health concerns.
+  6. Confirm if they are celebrating an occasion, as the small pizza is perfect for small gatherings.
+  7. If they express concern about portion size, steer them towards the medium pizza instead.
+
+[KNOWLEDGE FACTS]
+  1. The small pizza has approximately 1,200 calories total (150 calories per slice).
+  2. This item takes about 15 minutes to prepare in a traditional pizza oven at 450°F.
+  3. The small pizza is one of our best sellers, especially during family meal deals.
+  4. Regulars know that the small pizza is perfect for a light snack or lunch, not just for sharing.
+  5. The profit margin on the small pizza is around 60%, making it a great value for customers.
+
+
+3.2.3.3 Medium – $14.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for an additional charge.
+  2. Recommend pairing the Medium pizza with a side of garlic knots for just $5.99.
+  3. Mention that this Medium pizza is perfect for sharing and great for a family meal.
+  4. Warn the customer that the Medium pizza may contain gluten and dairy allergens.
+  5. Suggest a drink pairing, like a soda or iced tea, to complement their pizza order.
+  6. Confirm the estimated preparation time of 15-20 minutes for the Medium pizza.
+  7. If they express concern about calories, pivot to our healthier options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. The Medium pizza contains approximately 1500 calories (about 250 calories per slice).
+  2. Preparation time for the Medium pizza is typically 15-20 minutes, depending on current orders.
+  3. The Medium pizza is one of our best sellers, especially on weekends.
+  4. Regulars know that ordering a Medium pizza with half toppings can save money and still provide variety.
+  5. Profit margin on the Medium pizza is approximately 60%, making it a great value for customers.
+
+
+3.2.3.4 Large – $17.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for just $1.50 each.
+  2. Suggest pairing the large pizza with our garlic knots for a perfect combo.
+  3. Mention that the large pizza contains approximately 2400 calories total, which is about 300 calories per slice.
+  4. Warn the customer that this pizza contains gluten and dairy, which may affect those with allergies.
+  5. If they seem health-conscious, pivot by recommending our Garden Salad instead.
+  6. Confirm the preparation time is about 15 minutes for the large pizza.
+  7. Offer a dessert option, like our chocolate lava cake, to complete their meal.
+
+[KNOWLEDGE FACTS]
+  1. A large pizza typically serves 3-4 people and is a best seller on weekends.
+  2. The large pizza has approximately 2400 calories total, with 100 grams of fat.
+  3. Preparation for a large pizza includes baking at 450°F for 12-15 minutes.
+  4. A large pizza has approximately 2400 calories total, which is around 300 calories per slice.
+  5. The profit margin on a large pizza is around 60%, making it a key item in our menu.
+
+
+3.2.4 Meat Lovers
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a classic meat lovers or a meat lovers with extra toppings.
+  2. If they mention budget, route to our value meal options that include the meat lovers pizza.
+  3. Suggest adding a side of garlic knots for just $3.00 with their meat lovers order.
+  4. If they mention being in a rush, recommend our meat lovers pizza as it has a standard prep time of 15 minutes.
+  5. Guide the customer by explaining the different sizes available for the meat lovers pizza: small, medium, and large.
+  6. If the customer seems indecisive, offer the option of half meat lovers and half another pizza of their choice.
+  7. Confirm if they want to include any drinks or desserts with their meat lovers pizza order.
+
+[KNOWLEDGE FACTS]
+  1. The meat lovers pizza is popular due to its combination of pepperoni, sausage, ham, and bacon, appealing to meat enthusiasts.
+  2. Common customer segments include families and groups looking for hearty meal options for gatherings.
+  3. During football season, demand for meat lovers pizzas spikes significantly for game day parties.
+  4. All meat lovers pizzas contain gluten and may have allergens including dairy and soy.
+  5. Experienced employees know that offering a combo deal with a meat lovers pizza often increases sales.
+
+
+3.2.4.1 Ingredients: Pepperoni, sausage, bacon, ham.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they are aware that our pepperoni, sausage, and bacon contain pork, which may not be suitable for all dietary restrictions.
+  2. Suggest adding extra cheese to their order if they choose the pepperoni pizza, as it enhances the flavor for just $1.50.
+  3. Recommend pairing the meat lovers pizza with a side of garlic bread for a perfect combination.
+  4. Mention that the preparation time for the meat lovers pizza is approximately 15 minutes, so they should plan accordingly.
+  5. Warn the customer that our pepperoni and sausage pizzas contain gluten and are not suitable for gluten-free diets.
+  6. Confirm if they are looking for something hearty, as our meat lovers pizza is perfect for those who enjoy a rich, filling meal.
+  7. If they express concern about calories, pivot to our lighter options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. A large meat lovers pizza has approximately 2800 calories total (350/cal per slice).
+  2. Preparation time for our meat lovers pizza is about 15 minutes, and it is baked at 475°F.
+  3. Our pepperoni pizza is one of our best sellers, especially during game days and weekends.
+  4. Regulars know that ordering a meat lovers pizza with extra toppings can create a unique flavor experience.
+  5. The cost of ingredients for a meat lovers pizza is higher than average, affecting its overall price point.
+
+
+3.2.4.2 Small – $13.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they want to add extra toppings for $1.50 each to enhance their small pizza.
+  2. Mention that the small pizza contains 1,200 calories, and check if they have any dietary restrictions.
+  3. Suggest pairing the small pizza with our Garlic Knots for a delicious side.
+  4. Confirm the estimated preparation time is about 15 minutes for a fresh small pizza.
+  5. Warn the customer that this item contains gluten and may not be suitable for those with celiac disease.
+  6. If they seem unsure, recommend the small pizza as a great option for a light meal or snack.
+  7. Offer to customize the small pizza with their choice of sauce and toppings for a personalized experience.
+
+[KNOWLEDGE FACTS]
+  1. The small pizza has approximately 1,200 calories, which is ideal for light eaters.
+  2. Preparation time for a small pizza is typically around 15 minutes from order to serving.
+  3. The small pizza is one of our best-selling items during lunch hours.
+  4. Regulars know that the small pizza is perfect for sharing with kids or as a personal meal.
+  5. The cost of a small pizza is $13.99, contributing a good margin for the restaurant.
+
+
+3.2.4.3 Medium – $16.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as this medium pizza contains gluten and dairy.
+  2. Suggest adding a side of garlic knots for only $5.99 to complement their order.
+  3. Mention that this medium pizza takes approximately 15-20 minutes to prepare.
+  4. Warn the customer that this item contains cheese, which may not be suitable for lactose-intolerant individuals.
+  5. If they express interest in healthier options, recommend our Garden Salad as a great alternative.
+  6. Offer to customize their pizza with extra toppings for an additional charge.
+  7. Confirm if they would like to pair their pizza with a refreshing soda or iced tea.
+
+[KNOWLEDGE FACTS]
+  1. The medium pizza has approximately 1,400 calories total, making it a hearty option for a fulfilling meal.
+  2. Preparation time for the medium pizza is 15-20 minutes, depending on toppings.
+  3. Our medium pizza is one of the most ordered items, especially during game nights and parties.
+  4. Regulars know that the medium pizza can easily feed 2-3 people, making it a great value choice.
+  5. This pizza is particularly popular during family nights and weekends, making it a great choice for gatherings.
+
+
+3.2.4.4 Large – $19.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add extra toppings for just $1.50 each.
+  2. Recommend pairing the large pizza with a side of garlic knots for a perfect meal.
+  3. Mention that this large pizza contains gluten and dairy, so it may not be suitable for those with allergies.
+  4. Warn the customer that our large pizza has approximately 2400 calories, so it's ideal for sharing.
+  5. Suggest a dessert option, like our chocolate lava cake, to complete their order.
+  6. Confirm the estimated preparation time is about 15-20 minutes before it's ready for pick-up.
+  7. If they express concerns about calories, pivot to recommending our Garden Salad instead.
+
+[KNOWLEDGE FACTS]
+  1. A large pizza typically contains around 2400 calories in total, which is about 300 calories per slice.
+  2. Preparation time for a standard large pizza is approximately 15-20 minutes, depending on the toppings.
+  3. The large pizza is one of our best sellers, especially during game nights and family gatherings.
+  4. Regulars know that our large pepperoni pizza has a unique blend of spices that makes it extra flavorful.
+  5. The cost of making a large pizza is approximately $7, allowing for a good profit margin when sold at $19.99.
+
+
+3.3 Sides
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they would like to add a side to their order for a better meal experience.
+  2. Recommend the garlic knots if they mention wanting something cheesy and savory.
+  3. Mention that our sides are perfect for sharing if they are ordering for a group.
+  4. If they mention they are on a budget, guide them to our value combo offers that include sides.
+  5. Suggest our seasonal side salads if they are looking for a healthier option.
+  6. If they seem indecisive, offer a sample of our dipping sauces to enhance their side choices.
+  7. Confirm their choice of sides by repeating it back to them to ensure accuracy.
+
+[KNOWLEDGE FACTS]
+  1. The most popular side is garlic knots, as they pair well with pizza and are a customer favorite.
+  2. Families with children often prefer our cheesy breadsticks due to their shareable nature.
+  3. During the Super Bowl season, sides like wings and cheesy dips see a significant increase in demand.
+  4. All sides are made fresh daily, and some may contain allergens like dairy and gluten.
+  5. Experienced employees know that sides generally take about 10-15 minutes to prepare during peak times.
+
+
+3.3.1 Garlic Bread – $4.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add marinara sauce for dipping for an extra $0.50.
+  2. Recommend our garlic bread as a great side to enhance any pizza order.
+  3. Mention that our garlic bread is made fresh daily and baked to perfection.
+  4. Warn the customer that this item contains gluten and may not be suitable for those with gluten allergies.
+  5. Suggest pairing the garlic bread with a side of our Garden Salad for a balanced meal.
+  6. Confirm the preparation time is about 10 minutes, so it will be ready shortly after their pizza.
+  7. If they express concern about calories, pivot to our lighter options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. Garlic bread contains approximately 300 calories per serving.
+  2. Preparation time for garlic bread is around 10 minutes, baked at 400°F.
+  3. This item is a best seller, especially popular during lunch rush hours.
+  4. Regulars often request extra garlic butter, which enhances the flavor.
+  5. The cost margin on garlic bread is high, making it a profitable upsell.
+
+
+3.3.2 Garlic Bread with Cheese – $5.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Warn the customer that the Garlic Bread with Cheese contains dairy and gluten.
+  2. Suggest adding a side of marinara sauce for $0.99 to enhance the flavor experience.
+  3. Mention that the preparation time for Garlic Bread with Cheese is approximately 10 minutes.
+  4. If they order a pizza, recommend pairing it with the Garlic Bread with Cheese for a complete meal.
+  5. Confirm if the customer prefers it with extra cheese for an additional $1.50.
+  6. Ask if they have any dietary restrictions to ensure this item is suitable for them.
+  7. If a customer seems health-conscious, pivot to our Garden Salad instead of suggesting the Garlic Bread.
+
+[KNOWLEDGE FACTS]
+  1. One order of Garlic Bread with Cheese contains about 400 calories, primarily from the cheese and butter used, making it a rich indulgence.
+  2. This Garlic Bread with Cheese is baked until golden brown, ensuring a crispy texture that enhances the flavor.
+  3. This item is one of our best sellers, especially popular during the colder months.
+  4. Customers who frequently order this item know that it’s best enjoyed fresh out of the oven for maximum taste.
+  5. The cost of Garlic Bread with Cheese has a good margin, making it a profitable upsell item.
+
+
+3.3.3 Chicken Wings (8 pcs) – $9.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a side of ranch or blue cheese dip for $0.99.
+  2. Recommend pairing the chicken wings with a refreshing soft drink for a complete meal.
+  3. Mention that the chicken wings are deep-fried and may contain allergens such as wheat and soy.
+  4. Warn the customer that the wings are approximately 800 calories for the 8 pcs serving.
+  5. Suggest that if they are looking for something lighter, they might consider our Garden Salad instead.
+  6. Confirm the preparation time for the wings is about 15 minutes, and let them know if they would like to wait.
+  7. If they express concern about calories, pivot to our grilled chicken options which are lower in fat.
+
+[KNOWLEDGE FACTS]
+  1. An 8-piece serving of our chicken wings contains approximately 600 calories and 40 grams of fat.
+  2. Preparation for the chicken wings takes about 15 minutes as they are cooked to order.
+  3. Our chicken wings are fried for a crispy texture and are cooked at 350°F for 10-12 minutes.
+  4. The wings are fried to a crispy texture at 375°F for 10-12 minutes before serving.
+  5. During football season, chicken wings are our top-selling appetizer, especially on weekends.
+
+
+3.3.4 Caesar Salad – $6.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, as the Caesar Salad contains dairy and gluten.
+  2. Suggest adding grilled chicken for an additional $2.50 if they order the Caesar Salad.
+  3. Mention that the Caesar Salad pairs well with our garlic breadsticks for a complete meal.
+  4. Confirm that the preparation time for the Caesar Salad is approximately 5 minutes.
+  5. Warn the customer that the Caesar Salad contains anchovies, which may not be suitable for all diets.
+  6. Offer the option of a side dressing or extra toppings at no additional charge to customize their salad.
+  7. If they express interest in a lighter meal, recommend the Garden Salad instead of the Caesar Salad.
+
+[KNOWLEDGE FACTS]
+  1. The Caesar Salad has approximately 400 calories per serving, which can be adjusted based on any added proteins.
+  2. Preparation of the Caesar Salad takes about 5 minutes; we mix fresh romaine lettuce with our signature house-made Caesar dressing.
+  3. The Caesar Salad has approximately 400 calories, primarily from the dressing and cheese.
+  4. Regular customers often know we can prepare the salad without croutons for a gluten-free option.
+  5. Preparation of the Caesar Salad takes about 5 minutes, as we prepare it fresh to order.
+
+
+3.3.5 Garden Salad – $5.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions or allergies, as the Garden Salad contains various vegetables and dressings.
+  2. Suggest adding grilled chicken for an additional $2.00 to enhance the protein content of the salad.
+  3. Mention that the Garden Salad pairs well with a side of garlic knots for a complete meal experience.
+  4. Confirm that preparation time for the Garden Salad is approximately 5 minutes.
+  5. Warn the customer that the Garden Salad may contain gluten if they choose certain dressings.
+  6. If they express concern about calories, pivot to the Garden Salad as a low-calorie option at only 150 calories per serving.
+  7. Offer to customize the salad by asking which vegetables they prefer or if they want to add extra toppings.
+
+[KNOWLEDGE FACTS]
+  1. The Garden Salad contains approximately 150 calories per serving and is low in sugar.
+  2. Preparation takes around 5 minutes, as the ingredients are pre-washed and pre-cut.
+  3. This item is a consistent best-seller, especially during the summer months when customers prefer lighter options.
+  4. Regulars often know that the balsamic vinaigrette dressing is a favorite choice, adding a unique flavor.
+  5. The cost of the Garden Salad is $5.99, which has a good margin compared to other menu items.
+
+
+3.3.6 Mozzarella Sticks (6 pcs) – $7.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add marinara sauce for dipping at no extra charge.
+  2. Recommend pairing the mozzarella sticks with a side of garlic knots for a perfect appetizer combination.
+  3. Mention that each serving contains approximately 410 calories and may contain milk and wheat allergens.
+  4. Offer to make the mozzarella sticks extra crispy if they prefer a crunchier texture.
+  5. Suggest adding a refreshing drink, like a soda, to complement the mozzarella sticks for just $1.99.
+  6. Confirm the preparation time is about 5-7 minutes, so they will be ready shortly after ordering.
+  7. Warn the customer that these mozzarella sticks are not suitable for those with a gluten allergy.
+
+[KNOWLEDGE FACTS]
+  1. Each serving of mozzarella sticks contains approximately 410 calories and 22 grams of fat.
+  2. They are deep-fried for a crispy texture, taking about 5-7 minutes to prepare.
+  3. Mozzarella sticks are one of our best-selling appetizers, especially popular during game days.
+  4. Regulars often ask for extra marinara sauce since it pairs well and enhances the flavor.
+  5. The profit margin on mozzarella sticks is around 70%, making them a great value for the restaurant.
+
+
+3.3.7 Fries – $3.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they would like to add a drink to their order for a combo deal.
+  2. Recommend the fries as a perfect side with any pizza order.
+  3. Mention that our fries are cooked to a golden crisp and seasoned for extra flavor.
+  4. Warn the customer that the fries contain allergens, including wheat and may contain traces of soy.
+  5. Suggest that if they love our fries, they might also enjoy our cheese sticks.
+  6. Confirm the estimated preparation time for the fries is about 5 minutes.
+  7. If the customer expresses concern about calories, pivot to our Garden Salad or fruit options.
+
+[KNOWLEDGE FACTS]
+  1. Our fries contain approximately 300 calories per serving and have 15 grams of fat.
+  2. Fries are prepared in a deep fryer at 350 degrees Fahrenheit and take about 5 minutes to cook.
+  3. Fries are one of our best-selling side items, especially during busy hours.
+  4. Regulars know that dipping sauces for fries are available at no additional charge.
+  5. The cost of fries is $3.99, contributing to a good margin for the restaurant.
+
+
+3.3.8 Onion Rings – $4.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a side of marinara sauce for dipping at an additional cost.
+  2. Warn the customer that our onion rings are fried and may contain allergens like gluten.
+  3. If they order a burger, suggest pairing it with onion rings for a delicious combo.
+  4. Confirm that the preparation time for onion rings is approximately 5 minutes.
+  5. Mention that onion rings are perfect for sharing, especially at parties or gatherings.
+  6. Suggest that if they are looking for something lighter, they might want to consider our Garden Salad instead.
+  7. If a customer expresses concern about calories, offer to provide the nutritional information.
+
+[KNOWLEDGE FACTS]
+  1. Our onion rings contain approximately 350 calories per serving and are high in fat.
+  2. Onion rings are prepared by deep-frying and take about 5 minutes to cook.
+  3. They are one of our most popular side items, especially during weekends.
+  4. Regulars often customize their onion rings by adding extra seasonings available upon request.
+  5. The profit margin on onion rings is around 70%, making them a valuable menu item.
+
+
+3.4 Beverages
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they want a soft drink, bottled water, or a juice with their order.
+  2. If the customer mentions a budget, suggest our value combo drinks.
+  3. Guide them to our soda options by asking if they prefer regular or diet beverages.
+  4. If they seem unsure, suggest the most popular drink, which is the Coca-Cola.
+  5. If they mention they're in a rush, recommend our ready-to-go bottled drinks.
+  6. Offer a beverage pairing with a pizza order for a more appealing combo.
+  7. If the customer is indecisive, provide recommendations based on customer favorites or seasonal specials.
+
+[KNOWLEDGE FACTS]
+  1. The most popular drink is Coca-Cola due to its classic flavor and pairing with pizza.
+  2. Families often prefer larger beverage options like 2-liter bottles for group orders.
+  3. Summer months see a peak in demand for cold beverages, especially iced teas and lemonades.
+  4. All soft drinks on the menu are gluten-free, but always confirm with customers regarding allergens.
+  5. Experienced employees know that iced drinks generally take less than 2 minutes to prepare.
+
+
+3.4.1 Cola – $2.50
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a dessert for just $1.99 with their cola order.
+  2. Warn the customer that the cola contains high sugar content, about 65 grams per serving.
+  3. Suggest pairing the cola with our classic pepperoni pizza for a perfect combination.
+  4. Confirm that the preparation time for the cola is immediate, and it will be served right away.
+  5. Mention that if they are looking for a healthier option, the cola may not be the best choice due to its sugar content.
+  6. Offer a diet cola option if they express concern about calories or sugar intake.
+  7. If they mention they are celebrating, highlight that cola is a popular choice for parties and gatherings.
+
+[KNOWLEDGE FACTS]
+  1. A standard cola contains approximately 150 calories per 12 oz serving and has no fat.
+  2. Preparation time for a cola is less than 1 minute since it is served chilled from the cooler.
+  3. Cola is one of our best-selling beverages, especially during summer months and sporting events.
+  4. Regulars often know that we offer a free refill on cola if they dine in with us.
+  5. The cost of a cola is $2.50, with a typical margin of 80% based on the purchase cost.
+
+
+3.4.2 Diet Cola – $2.50
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to try our Diet Cola with their meal for only $2.50.
+  2. Recommend pairing the Diet Cola with a slice of our Margherita pizza for a refreshing combination.
+  3. Mention that the Diet Cola contains zero calories, making it a great choice for those watching their intake.
+  4. Warn the customer that the Diet Cola contains aspartame and may not be suitable for individuals with phenylketonuria (PKU).
+  5. If they express interest in a healthier option, suggest our sparkling water instead.
+  6. Confirm the preparation time for the Diet Cola is immediate, as it is ready to serve.
+  7. If a customer seems uncertain, offer to describe the crisp taste of the Diet Cola, which is perfect for summer days.
+
+[KNOWLEDGE FACTS]
+  1. A 12 oz Diet Cola contains 0 calories and 0 grams of sugar.
+  2. Diet Cola is carbonated and served chilled, with no additional preparation time required.
+  3. Diet Cola is popular among customers looking for a low-calorie beverage option.
+  4. Regulars know that Diet Cola pairs excellently with our spicy wings, balancing out the heat.
+  5. The profit margin on Diet Cola is high, making it an important upsell item for maximizing revenue.
+
+
+3.4.3 Sprite – $2.50
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a dessert for just $1.99 when they order a Sprite.
+  2. Mention that the Sprite contains 38 grams of sugar, which is about 9.5 teaspoons.
+  3. Suggest pairing the Sprite with our pepperoni pizza for a classic combo.
+  4. Confirm that the Sprite will be ready in about 2 minutes after the order is placed.
+  5. Warn the customer that the Sprite is not suitable for those with a citrus allergy.
+  6. Offer a smaller size if they mention they are watching their sugar intake.
+  7. If they express concerns about calories, pivot to recommending our unsweetened iced tea.
+
+[KNOWLEDGE FACTS]
+  1. A 12 oz Sprite contains approximately 140 calories and 38 grams of sugar.
+  2. Preparation time for the Sprite is very quick, usually under 2 minutes.
+  3. Sprite is one of our best-selling soft drinks, especially during summer.
+  4. Regulars know that Sprite is a great refreshment for spicy pizzas.
+  5. The cost to Mario's for a Sprite is $0.50, allowing for a good profit margin.
+
+
+3.4.4 Iced Tea – $2.50
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a slice of lemon to their iced tea for an extra refreshing taste.
+  2. Recommend pairing the iced tea with our BBQ Chicken Pizza for a delicious meal combination.
+  3. Mention that our iced tea contains approximately 100 calories per serving, which is a lighter option.
+  4. Warn the customer that our iced tea contains no allergens but may not be suitable for those watching their sugar intake, as it has about 25 grams of sugar.
+  5. If they mention wanting something cold and refreshing, suggest the iced tea as a great choice.
+  6. Confirm the iced tea has a preparation time of about 2 minutes, ensuring it's served fresh and cold.
+  7. If the customer seems health-conscious, pivot the conversation to our Sparkling Water or Unsweetened Iced Tea.
+
+[KNOWLEDGE FACTS]
+  1. Our iced tea has approximately 100 calories and 25 grams of sugar per serving.
+  2. The iced tea is brewed fresh daily, ensuring a great taste with every serving.
+  3. Iced tea is a popular choice during summer months, often being one of our best-selling beverages.
+  4. Regular customers know that they can customize their iced tea with flavored syrups at no extra charge.
+  5. The cost of the iced tea is $2.50, providing a good profit margin for the restaurant.
+
+
+3.4.5 Orange Juice – $3.00
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to try our fresh-squeezed orange juice for $3.00.
+  2. Recommend pairing the orange juice with a breakfast pizza for a refreshing start to the day.
+  3. Mention that our orange juice contains 120 calories and is high in vitamin C.
+  4. Warn the customer that this item is not suitable for those with citrus allergies.
+  5. Suggest adding a splash of sparkling water to the orange juice for a fizzy twist.
+  6. Confirm the preparation time for the orange juice is about 2 minutes, as we squeeze it fresh.
+  7. If they express concern about sugar content, pivot to our unsweetened iced tea option.
+
+[KNOWLEDGE FACTS]
+  1. Our orange juice contains 120 calories per serving and is made from 100% pure squeezed oranges, without any added sugars.
+  2. Freshly squeezed orange juice is prepared on demand, taking about 2 minutes to serve.
+  3. This item is popular during breakfast hours and often recommended by our regular guests.
+  4. Regulars know that our orange juice is made from 100% Valencia oranges, giving it a rich flavor.
+  5. We serve our orange juice chilled, and it takes less than 2 minutes to prepare and serve.
+
+
+3.4.6 Water – $1.50
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add water to their order for just $1.50.
+  2. Recommend pairing the water with a slice of our Margherita pizza for a refreshing meal.
+  3. Confirm that our water is filtered and does not contain any added sugars or calories.
+  4. Suggest customers consider upgrading to a flavored sparkling water if they prefer something with a bit more zest.
+  5. Warn the customer that while our water is calorie-free, it is not a substitute for hydration when consuming salty foods.
+  6. Mention that water is a great choice for families with kids, as it is a healthy and inexpensive option.
+  7. If they express concern about spending too much, remind them that water is the most economical drink on the menu.
+
+[KNOWLEDGE FACTS]
+  1. Our water contains zero calories and is free from allergens.
+  2. Preparation time for water is immediate; it can be served as soon as the order is placed.
+  3. Water is one of our best-selling beverages, especially during hot summer months.
+  4. Regulars know that ordering water is a great way to save money while enjoying a meal.
+  5. The cost of water is low, providing a high-profit margin for the restaurant.
+
+
+3.4.7 2L Pop Bottle – $4.99
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a 2L Pop Bottle to their order for $4.99.
+  2. Mention that this pop contains 65 grams of sugar per bottle; suggest it for those looking for a sweet beverage.
+  3. Recommend pairing the 2L Pop Bottle with our popular Pepperoni Pizza for a perfect meal combination.
+  4. Confirm that the 2L Pop Bottle will take approximately 1-2 minutes to prepare at the counter.
+  5. Warn customers that the 2L Pop Bottle is not suitable for those with a soda allergy, as it contains carbonated water and sugar.
+  6. If the customer expresses interest in healthier options, pivot the conversation to our low-calorie beverages.
+  7. Suggest customers consider the 2L Pop Bottle for gatherings or parties, as it's a great value for serving multiple guests.
+
+[KNOWLEDGE FACTS]
+  1. The 2L Pop Bottle contains approximately 250 calories and 65 grams of sugar per bottle.
+  2. Preparation time for the 2L Pop Bottle is minimal, typically ready within 1-2 minutes as it is pre-packaged.
+  3. This item is a consistent best seller, especially during weekends and holidays when customers order larger meals.
+  4. Regulars know that the 2L Pop Bottle is often discounted during combo deals, making it more appealing.
+  5. The profit margin on the 2L Pop Bottle is about 60%, providing a good upsell opportunity.
+
+
+4. Ordering Options
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer a personal size or a larger pizza for sharing.
+  2. If they mention a budget, route to our value meal options.
+  3. Suggest starting with our specialty pizzas if they're unsure of what to order.
+  4. If they say they want something quick, recommend our ready-to-go slices.
+  5. Offer to customize their pizza with toppings after they choose a base.
+  6. Guide them through our combo deals if they are ordering for a group.
+  7. If they seem indecisive, mention our most popular pizza selections to help them decide.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita pizza is our most popular item due to its fresh ingredients and simple flavor profile.
+  2. Families often prefer larger pizzas or combo meals for sharing, while singles may opt for personal sizes.
+  3. Peak demand occurs during sports events and weekends, with pizza orders increasing significantly.
+  4. All pizzas are made fresh to order, and specialty pizzas may take an additional 5-10 minutes to prepare.
+  5. Experienced employees recommend asking about dietary restrictions, as some crusts may contain gluten.
+
+4.1 Delivery
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer delivery or pick-up to start the order process.
+  2. Confirm the delivery address to ensure accuracy before proceeding.
+  3. If they mention a budget, suggest our value meal options that fit within their price range.
+  4. Guide the customer through our pizza types by asking if they prefer classic, specialty, or create-your-own.
+  5. If they mention they are in a rush, recommend our quick-fire pizzas that have a shorter prep time.
+  6. Suggest adding a drink or dessert to complement their pizza order.
+  7. If the customer seems indecisive, offer to describe our most popular pizzas and what makes them special.
+
+[KNOWLEDGE FACTS]
+  1. Our Margherita pizza is a favorite for its fresh ingredients and simplicity, appealing to both vegetarians and meat-eaters.
+  2. Families often order large pizzas with multiple toppings to cater to varying tastes, while singles may prefer individual slices.
+  3. During football season, demand for pizza delivery increases significantly, especially on game days.
+  4. All pizzas can be customized to accommodate gluten-free and vegan diets, ensuring inclusivity for all customers.
+  5. A standard large pizza takes about 15-20 minutes to prepare, while specialty pizzas may take an additional 5 minutes.
+
+
+4.1.1 Delivery is available within a 10 km radius of the restaurant.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they are within the 10 km delivery radius.
+  2. Mention that delivery is free for orders over $30.
+  3. Suggest adding a side of garlic bread if they order a pizza.
+  4. Confirm the estimated delivery time is 30 to 45 minutes.
+  5. Warn customers that our pizzas may contain allergens like gluten and dairy.
+  6. Offer a discount on their next order if they join our loyalty program.
+  7. If they express concern about calories, recommend our lighter options like the Margherita pizza.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains approximately 2400 calories, which is about 300 calories per slice, making it a hearty choice.
+  2. Delivery typically takes 30 to 45 minutes, depending on traffic and distance.
+  3. The Pepperoni pizza is our best seller, loved for its classic flavor; suggest it to customers looking for a popular option.
+  4. Regulars know that ordering during peak hours may increase delivery time.
+  5. Adding extra toppings typically adds about 7 minutes to the preparation time, so inform customers when they ask for modifications.
+
+
+4.1.2 Minimum order for delivery: $15.00.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention that the minimum order for delivery is $15.00 to ensure they meet the requirement.
+  2. Suggest adding a drink to their order, as it complements the meal and can increase the overall value.
+  3. Ask if they would like to try our garlic knots, which pair excellently with any pizza.
+  4. Confirm the preparation time for a standard pizza is about 15-20 minutes, depending on the order size.
+  5. Warn customers that some items may contain allergens like gluten or dairy, and to let us know if they have any dietary restrictions.
+  6. Recommend larger sizes or specialty pizzas if they mention they are ordering for a group.
+  7. If they express concern about the cost, offer to help them find a combination that meets the $15.00 minimum while still satisfying their cravings.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains approximately 300 calories per slice, totaling around 2400 calories for the entire pizza, which is ideal for sharing.
+  2. Specialty pizzas typically require an additional 10 minutes to prepare due to the extra toppings, so let the customer know to plan for that.
+  3. Our Meat Lover's Pizza is particularly popular on game days, and many customers enjoy it during sports events, making it a great choice for group orders.
+  4. Incorporate our spicy sauce by suggesting it as an option when customers order wings or pizza; many regulars love the added kick.
+  5. Drinks are often a great upsell opportunity; a 2-liter soda pairs perfectly with a pizza and enhances the meal experience.
+
+
+4.1.3 Delivery fee: $3.99.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention that the delivery fee is $3.99 to ensure the customer is aware of total costs.
+  2. Suggest adding a dessert to their order; it pairs well with pizza and enhances the meal experience.
+  3. Ask if they would like to upgrade to a larger pizza size for just a small additional cost.
+  4. Warn the customer that if they are on a strict diet, the delivery fee may not justify a small order.
+  5. Confirm the estimated delivery time is around 30-45 minutes, depending on traffic.
+  6. Offer a drink pairing with their pizza to complete the meal, as it enhances flavor and satisfaction.
+  7. Recommend that if they are ordering for a party, they consider our combo deals to save on delivery costs.
+
+[KNOWLEDGE FACTS]
+  1. The delivery fee of $3.99 applies to all orders, regardless of size.
+  2. A medium cheese pizza contains approximately 300 calories per slice, making it a good option for a casual meal.
+  3. A large pizza can serve 3-4 people, making it a popular choice for families and gatherings.
+  4. Expect a typical pizza preparation time of about 12 minutes for standard pizzas, while specialty pizzas may take up to 15 minutes.
+  5. Our delivery process typically takes 30-40 minutes, ensuring your pizza is hot and fresh upon arrival.
+
+
+4.1.4 Free delivery applies to orders over $30.00.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention that free delivery applies to orders over $30.00.
+  2. Ask if they would like to add a dessert to their order to meet the free delivery requirement.
+  3. Suggest a popular appetizer like garlic knots or wings to complement their pizza order.
+  4. Confirm the estimated delivery time is around 30-45 minutes for orders over $30.00.
+  5. Warn the customer that some items may contain allergens like gluten, dairy, or nuts.
+  6. If they mention they are on a budget, pivot to our value meal deals to maximize their order.
+  7. Offer to customize their pizza with extra toppings for just a small additional fee.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains around 2400 calories total, so let customers know it’s a great option for sharing.
+  2. Free delivery is a great incentive to increase the average order value.
+  3. Garlic knots are one of our best-selling appetizers and pair well with any pizza.
+  4. Our drinks, such as soda or iced tea, are often discounted when added to any pizza order, providing better value.
+  5. Orders exceeding $30.00 not only qualify for free delivery but also typically lead to a better selection of items for the customer.
+
+
+4.1.5 Estimated delivery time: 30–45 minutes.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they would like to add extra toppings for just $1.50 each.
+  2. Mention that our delivery time is estimated to be 30–45 minutes, depending on traffic.
+  3. Suggest pairing their pizza with our garlic knots, as they complement the flavors nicely.
+  4. Warn the customer that our gluten-free crust is prepared in the same kitchen as gluten products, so cross-contamination is possible.
+  5. If a customer expresses concern about calories, recommend our Garden Salad as a healthier option.
+  6. Confirm any allergies the customer may have before finalizing their order, especially for our specialty pizzas.
+  7. Offer to customize their pizza with a variety of sauces to enhance flavor.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total, which is about 300 calories per slice.
+  2. Preparation time for a standard pizza is around 15 minutes, while specialty pizzas may take an additional 5 minutes.
+  3. Our Margherita pizza is a seasonal favorite during the summer months and often sells out quickly.
+  4. Regulars often know that ordering a 'half-and-half' pizza allows them to try two different flavors at once.
+  5. The profit margin on our specialty pizzas is higher than on our basic cheese pizza, making it a valuable upsell opportunity.
+
+
+4.1.6 Customers must provide full delivery address, postal code, and phone number.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer for their full delivery address, including postal code and phone number.
+  2. Confirm the phone number to ensure we can reach them if needed.
+  3. Mention that we need the complete address to guarantee timely delivery.
+  4. Suggest that they double-check their postal code to avoid delivery delays.
+  5. Warn the customer that an incomplete address may result in order cancellation.
+  6. Offer assistance in filling out any missing information if they are unsure.
+  7. If they hesitate, explain that providing accurate details helps us serve them better.
+
+[KNOWLEDGE FACTS]
+  1. A complete delivery address reduces the risk of delayed orders and cancellations.
+  2. Orders with incomplete addresses often lead to a 15% increase in customer complaints.
+  3. Regular customers know to provide their address as soon as they place their order for quicker service.
+  4. Inaccurate postal codes can add an average of 20 minutes to delivery times.
+  5. Having the customer's phone number allows us to contact them for any delivery issues, enhancing customer satisfaction.
+
+
+4.1.7 Apartment or buzzer number is recommended when applicable.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have an apartment or buzzer number to ensure timely delivery.
+  2. Mention that providing an apartment number helps avoid delivery delays.
+  3. Suggest they include specific delivery instructions if they have a secure entry.
+  4. Confirm the address details, including any apartment or buzzer number.
+  5. Warn that missing delivery information can result in longer wait times.
+  6. Offer to repeat the delivery address back to them for accuracy.
+  7. Suggest they check with their building's security about delivery protocols.
+
+[KNOWLEDGE FACTS]
+  1. Including an apartment number can decrease delivery time by up to 15 minutes.
+  2. About 30% of delivery delays are caused by missing or incorrect apartment information.
+  3. Regular customers know to provide delivery instructions to avoid issues with access.
+  4. Providing a buzzer number is essential for buildings with restricted entry.
+  5. Miscommunication on delivery details can lead to a 20% increase in customer complaints.
+
+
+4.2 Pickup
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer pickup or delivery to start the order process.
+  2. Guide them by asking if they have a specific pizza in mind or if they want to explore our menu.
+  3. If they mention a budget, recommend our value meal options that fit within their range.
+  4. Suggest adding a side or drink to enhance their meal at a discounted combo price.
+  5. If they seem rushed, recommend our pre-made pizzas that can be ready for quick pickup.
+  6. Ask if they're ordering for a group or just for themselves to tailor the portion sizes.
+  7. If they are indecisive, offer to describe our most popular pizzas to help them make a choice.
+
+[KNOWLEDGE FACTS]
+  1. The Margherita pizza is a customer favorite due to its fresh ingredients and classic flavor.
+  2. Families with children often prefer our cheese and pepperoni pizzas for their simplicity.
+  3. During the Super Bowl season, we see a 30% increase in orders for large pizzas and party platters.
+  4. Allergy alert: Our crusts may contain wheat and gluten, and some pizzas may have nut toppings.
+  5. Experienced employees know that our custom toppings can significantly increase order time, so inform customers of a 10-minute prep time for specialty pizzas.
+
+
+4.2.1 Pickup orders are typically ready within 15–20 minutes.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Confirm that pickup orders are typically ready within 15–20 minutes.
+  2. Recommend adding a side of garlic bread for only $3.00 with their pizza order.
+  3. Suggest that our Buffalo Wings go great with any pizza order.
+  4. Warn the customer that some pizzas may contain allergens like gluten and dairy.
+  5. Ask if they are celebrating, and if so, suggest a dessert option like our Chocolate Lava Cake.
+  6. Mention that if they order a large pizza, they can get a second medium pizza at half price.
+  7. Offer to customize their pizza with extra toppings for a small additional charge.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains approximately 2,400 calories total, making it one of our heartiest options.
+  2. Pizzas are typically ready for pickup in 15–20 minutes, so it's best to place your order ahead of time.
+  3. The Margherita pizza features fresh mozzarella and basil, and is a top seller on Fridays and Saturdays.
+  4. Regular customers often know that a large pizza is more cost-effective than two medium pizzas.
+  5. Adding extra cheese increases the cost by $1.50 and adds approximately 200 calories.
+
+
+4.2.2 There is no minimum order for pickup.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Mention that there is no minimum order for pickup, allowing them to order exactly what they want.
+  2. Ask if they would like to add a drink to their order for just $1.99.
+  3. Suggest a side of garlic knots with their pizza for a perfect pairing.
+  4. Confirm the estimated preparation time for their order is around 15-20 minutes.
+  5. Warn customers that some items may contain allergens such as gluten, dairy, or nuts.
+  6. If they mention they have kids, recommend our kid-sized pizza options for a fun meal.
+  7. If they express concern about calories, pivot to our lighter options like the Garden Salad.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total (300 calories per slice).
+  2. Preparation time for a regular pizza is about 12-15 minutes for standard toppings.
+  3. Our Margherita pizza is a best-seller among health-conscious customers due to its simple ingredients.
+  4. Regulars often know that adding extra toppings can significantly enhance flavor without a huge price increase.
+  5. Our profit margin on drinks is higher than on pizzas, making them a great upsell opportunity.
+
+
+4.2.3 Customers must provide their name when placing a pickup order.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer for their name to ensure the order is correctly labeled for pickup.
+  2. Confirm the customer's name and repeat it back for accuracy before finalizing the order.
+  3. Suggest adding a side of garlic knots for only $5.99 if they are ordering a pizza.
+  4. Warn customers that we cannot guarantee the absence of allergens like gluten or dairy in our products.
+  5. Mention that our average preparation time for a pizza pickup order is about 15 to 20 minutes.
+  6. If a customer seems unsure, offer to recommend our most popular pizza, the Margherita, as a great choice.
+  7. Suggest that if they are celebrating, they might want to add a dessert like our chocolate lava cake.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total, which breaks down to around 300 calories per slice.
+  2. Preparation of a standard pizza takes about 15 minutes; specialty pizzas may take 5 minutes longer.
+  3. Our Margherita pizza is the best seller and is favored by many regulars for its fresh ingredients.
+  4. New customers might not know that we offer a 10% discount on orders over $50, which regulars often take advantage of.
+  5. Our pizzas contain allergens such as wheat and dairy; customers with sensitivities should be advised accordingly.
+
+
+5. Payment Policy
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they prefer to pay with cash or credit card.
+  2. If they mention a budget, suggest our value meal deals.
+  3. Guide them through our payment options, and mention any ongoing promotions.
+  4. If they are in a rush, recommend our express pickup service.
+  5. Offer to split the bill if they are ordering for a group.
+  6. Suggest add-ons like drinks or desserts to enhance their order.
+  7. Confirm their order details and the total cost before processing the payment.
+
+[KNOWLEDGE FACTS]
+  1. The most popular payment method is credit card, as it speeds up the transaction.
+  2. Families often prefer combo deals, while singles might favor single pizzas or slices.
+  3. Peak demand usually occurs on weekends and during major sports events.
+  4. We have a no-refund policy for custom orders once they are in preparation.
+  5. Experienced employees know that gluten-free crusts require additional prep time of about 5 minutes.
+
+
+5.1 Accepted payment methods include Cash, Visa, Mastercard, Debit, Apple Pay, and Google Pay.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they would like to pay with Cash, Visa, Mastercard, Debit, Apple Pay, or Google Pay.
+  2. Suggest adding a dessert if they order a large pizza, as it complements the meal perfectly.
+  3. Mention that the average preparation time for a pizza is about 15-20 minutes, depending on the toppings.
+  4. Warn the customer that our gluten-free crust is prepared in the same kitchen, which may contain traces of gluten.
+  5. If they express concerns about sugar content, recommend our Garden Salad as a healthier alternative.
+  6. Offer to split their bill into multiple payment methods if they request it.
+  7. Confirm if they would like to add extra toppings for an additional charge.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza contains approximately 300 calories per slice, totaling around 2400 calories for the whole pizza.
+  2. Our gluten-free pizza crust contains almond flour and is suitable for those with gluten allergies, but may not be completely free of gluten.
+  3. Our stuffed crust pizza requires an additional 5 minutes of preparation time compared to standard pizzas.
+  4. Customers often don't know that all our pizzas can be made with a cauliflower crust, which is low in carbs.
+  5. Using Apple Pay or Google Pay can speed up the transaction process, usually reducing wait time by about 2-3 minutes.
+
+
+5.2 Tips are appreciated but not required.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they would like to add a side of garlic knots for just $3.00 with their pizza order.
+  2. Warn the customer that our BBQ Chicken Pizza contains gluten and may not be suitable for those with gluten allergies.
+  3. Suggest pairing their pepperoni pizza with a refreshing Caesar salad for a complete meal.
+  4. Confirm the expected preparation time for their pizza is approximately 15 to 20 minutes.
+  5. If they mention they are watching their calories, pivot to our lighter Veggie Pizza option.
+  6. Mention that tips are appreciated but not required, as our staff is here to provide great service regardless.
+  7. Recommend a large pizza instead of a medium when they mention that they are feeding a group.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total, which is about 300 calories per slice.
+  2. Our Margherita pizza is made with fresh tomatoes and basil, and is popular during the summer months.
+  3. The preparation time for stuffed crust pizza is an additional 5 minutes compared to our regular crust.
+  4. Regular customers know that our 'Pizza of the Month' offers unique flavors not found on the regular menu.
+  5. The profit margin on specialty pizzas is higher, making them a great recommendation for increased sales.
+
+
+6. Customer Service
+
+[INSTRUCTIONS]  (CATEGORY)
+  1. Ask if they are ordering for a group or just for themselves to tailor the options.
+  2. Ask if they have a specific type of pizza in mind, like pepperoni or veggie.
+  3. Mention any current promotions or deals to help guide their decision.
+  4. Suggest adding a side of garlic knots if they are ordering pizza to enhance their meal.
+  5. Confirm if they have any dietary restrictions, such as gluten-free or vegetarian preferences.
+  6. Guide them through the menu by asking if they prefer a classic or specialty pizza.
+  7. If they mention they're in a rush, offer our quick pickup options or suggest a pre-made pizza.
+
+[KNOWLEDGE FACTS]
+  1. Our large pepperoni pizza is the most popular item, with ~2400 calories total (300/slice), appealing to many customers.
+  2. Families with children often prefer larger sizes and combo deals for value.
+  3. During major sports events, pizza orders peak, especially for party packs.
+  4. All pizzas are made fresh to order, typically taking 15-20 minutes for preparation.
+  5. Experienced employees recommend asking about dietary restrictions to better serve customers with allergies.
+
+
+6.1 Mario’s Pizza strives to ensure accurate order preparation and timely service.
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask if they have any dietary restrictions, especially regarding gluten or dairy allergies.
+  2. Suggest adding a side of garlic knots if they order a large pizza.
+  3. Mention that our veggie pizza is a great option for customers who are health-conscious.
+  4. Confirm the estimated preparation time for their order is around 15 minutes.
+  5. Warn the customer that our spicy pepperoni pizza contains a significant amount of sodium.
+  6. Recommend a cold drink to pair with their hot pizza, such as our house-made lemonade.
+  7. If they seem hesitant about toppings, offer to customize their pizza to suit their tastes.
+
+[KNOWLEDGE FACTS]
+  1. A large pepperoni pizza has approximately 2400 calories total (300 calories per slice).
+  2. Our Margherita pizza is a best seller and typically takes about 12 minutes to prepare.
+  3. The stuffed crust option adds an extra 5 minutes to the prep time.
+  4. Regulars know that the Hawaiian pizza is less popular but has a unique flavor profile that some love.
+  5. A large pepperoni pizza has approximately 2400 calories total, which is about 300 calories per slice.
+
+
+6.2 Customers experiencing issues with their order are encouraged to contact the restaurant directly for resolutio
+
+[INSTRUCTIONS]  (LEAF)
+  1. Ask the customer if they need assistance with their order or if there are any issues they would like to discuss.
+  2. Recommend that if they ordered a pizza, they might enjoy adding garlic knots for a perfect pairing.
+  3. Mention that our pizzas are made fresh daily and typically have a preparation time of about 15-20 minutes.
+  4. Warn the customer that certain pizzas contain allergens such as gluten and dairy; please inquire if they have any dietary restrictions.
+  5. Suggest upgrading to a large pizza for just $3 more, which is a great value for families or larger gatherings.
+  6. Confirm with the customer if they would like to add a drink to their order, as it often complements their meal.
+  7. If a customer expresses dissatisfaction, offer to replace the item or provide a refund, ensuring their experience is resolved.
+
+[KNOWLEDGE FACTS]
+  1. A slice of our cheese pizza has approximately 250 calories, totaling about 2000 calories for a whole pizza, which is important for customers tracking their intake.
+  2. Stuffed crust pizza requires an additional 5 minutes to prepare, so let them know to expect a total of about 20 minutes for their order.
+  3. Our Margherita pizza is a seasonal favorite, especially during summer months, making it a popular choice among regulars.
+  4. Many regular customers know to ask for extra sauce on the side, as it enhances the overall flavor of the pizza.
+  5. The profit margin on our specialty pizzas is around 60%, making them a great upsell opportunity.

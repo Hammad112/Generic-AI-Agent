@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pycache
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables (NEVER commit these)
+.env
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# PDF files (user-provided, not part of repo)
+
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# LangGraph checkpoints
+.langgraph_cache/
+
+tests/generate_photography_evidence.py
+tests/generate_showroom_evidence.py
+tests/test_concurrency.py
+tests/photography_evidence_report.md
+tests/showroom_evidence_report.md
+sample_pdfs/mario_pizza.md
+sample_pdfs/showroom.md
+sample_pdfs/photography.md
+

@@ -1,0 +1,22 @@
+[
+  {
+    "suite": "Restaurant",
+    "passed": 13,
+    "failed": 1,
+    "warnings": 0,
+    "errors": [
+      "view cart: pizza still present after removal"
+    ]
+  },
+  {
+    "suite": "Restaurant",
+    "passed": 11,
+    "failed": 3,
+    "warnings": 0,
+    "errors": [
+      "add pizza: expected one of ['pepperoni', 'pizza', 'added', 'cart', 'crust', 'size'] in response",
+      "replace item: expected one of ['garlic', 'removed', 'pizza', 'bread', 'instead', 'done'] in response",
+      "view cart: garlic bread missing from cart"
+    ]
+  }
+]

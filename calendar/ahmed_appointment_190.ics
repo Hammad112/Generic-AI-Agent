@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Generic AI Business Agent//Appointment System//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:booking-190@genericagent
+DTSTAMP:20260319T182405Z
+DTSTART:20260319T110000Z
+DTEND:20260319T113000Z
+SUMMARY:Professional Headshot Session — ahmed with Sarah Kim
+DESCRIPTION:📋 APPOINTMENT DETAILS\n──────────────────────────────────────\n👤 Patient:   ahmed\n🩺 Provider:  Sarah Kim\n💼 Service:   Professional Headshot Session\n📅 Date:      Thursday, March 19, 2026\n🕐 Time:      4:00 PM – 4:30 PM (30 min)\n🏥 Clinic:    Moments Captured Photography\n📋 Reference: APPT-00190\n──────────────────────────────────────\n⏰ Reminders set for 24 hours and 1 hour before.
+ORGANIZER;CN=Moments Captured Photography:mailto:noreply@genericagent.com
+ATTENDEE;CN=ahmed;RSVP=TRUE:mailto:customer@example.com
+LOCATION:Moments Captured Photography
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Professional Headshot Session with Sarah Kim is tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Professional Headshot Session starts in 1 hour
+END:VALARM
+END:VEVENT
+END:VCALENDAR

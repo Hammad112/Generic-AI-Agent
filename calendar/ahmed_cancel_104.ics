@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Generic AI Business Agent//Appointment System//EN
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VEVENT
+UID:booking-104@genericagent
+DTSTAMP:20260319T180920Z
+DTSTART:20260320T060000Z
+DTEND:20260320T064500Z
+SUMMARY:CANCELLED: Tooth Filling (Composite) — ahmed with Dr. Peter Smith
+DESCRIPTION:⚠ APPOINTMENT CANCELLED\n──────────────────────────────────────\nService:  Tooth Filling (Composite)\nPatient:  ahmed\nProvider: Dr. Peter Smith\nWas:      Friday, March 20, 2026  11:00 AM – 11:45 AM\nRef:      APPT-00104\n──────────────────────────────────────\nThis appointment has been cancelled.\nPlease contact Bright Smile Dental Clinic to rebook.
+ORGANIZER;CN=Bright Smile Dental Clinic:mailto:noreply@genericagent.com
+ATTENDEE;CN=ahmed;RSVP=TRUE:mailto:customer@example.com
+LOCATION:Bright Smile Dental Clinic
+STATUS:CANCELLED
+SEQUENCE:1
+END:VEVENT
+END:VCALENDAR
