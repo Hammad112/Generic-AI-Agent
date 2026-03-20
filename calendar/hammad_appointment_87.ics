@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Generic AI Business Agent//Appointment System//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:booking-87@genericagent
+DTSTAMP:20260320T005842Z
+DTSTART:20260327T090000Z
+DTEND:20260327T094500Z
+SUMMARY:Tooth Filling (Composite) — hammad with Dr. Peter Smith
+DESCRIPTION:📋 APPOINTMENT DETAILS\n──────────────────────────────────────\n👤 Patient:   hammad\n🩺 Provider:  Dr. Peter Smith\n💼 Service:   Tooth Filling (Composite)\n📅 Date:      Friday, March 27, 2026\n🕐 Time:      2:00 PM – 2:45 PM (45 min)\n🏥 Clinic:    Bright Smile Dental Clinic\n📋 Reference: APPT-00087\n──────────────────────────────────────\n⏰ Reminders set for 24 hours and 1 hour before.
+ORGANIZER;CN=Bright Smile Dental Clinic:mailto:noreply@genericagent.com
+ATTENDEE;CN=hammad;RSVP=TRUE:mailto:customer@example.com
+LOCATION:Bright Smile Dental Clinic
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Tooth Filling (Composite) with Dr. Peter Smith is tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Tooth Filling (Composite) starts in 1 hour
+END:VALARM
+END:VEVENT
+END:VCALENDAR

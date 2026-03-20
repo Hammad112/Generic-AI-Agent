@@ -183,7 +183,14 @@ No markdown."""
             items_to_add = []
 
         if not items_to_add:
-            return {"success": False, "message": "What would you like to add to your order? Please tell me the items you'd like."}
+            return {
+                "success": False,
+                "needs_info": True,
+                "message": (
+                    "What would you like to add? Please type the item name, "
+                    "for example: **Margherita Large** or **Pepperoni Medium**"
+                ),
+            }
 
         # Build name->service map for validation (avoid Lasagna->Pasta Carbonara substitution)
         combined_text = f"{query} {last_agent}".lower()
@@ -232,8 +239,8 @@ No markdown."""
             added_log.append(f"{quantity}x {svc['name']}")
 
         if not added_log:
-            msg = first_unmatched_msg or "What would you like to add to your order? Please tell me the items you'd like."
-            return {"success": False, "message": msg}
+            msg = first_unmatched_msg or "I could not find that item. Please type the exact item name from the menu."
+            return {"success": False, "needs_info": True, "message": msg}
 
         conn.commit()
         # Log after commit to avoid DB lock contention
@@ -428,7 +435,7 @@ def confirm_order(state: dict, **kwargs) -> dict:
                     "success": False,
                     "message": "I found items in your cart from a different session, but your current session is empty. Please verify your order."
                 }
-            return {"success": False, "message": "Your cart is currently empty. What would you like to add?"}
+            return {"success": False, "needs_info": True, "message": "Your cart is empty. Please add items first by typing their name, e.g. **Margherita Large** or **Pepperoni Medium**."}
 
         # Calculate total from the SAME cart_items we're ordering (ensures consistency)
         total = round(sum(float(c["quantity"] or 1) * float(c["unit_price"] or 0.0) for c in cart_items), 2)
@@ -532,6 +539,88 @@ def confirm_order(state: dict, **kwargs) -> dict:
 # ─────────────────────────────────────────────
 # Booking / Scheduling Tools
 # ─────────────────────────────────────────────
+
+def _resolve_date_python(text: str, today: datetime | None = None) -> str | None:
+    """
+    Resolve a date expression to YYYY-MM-DD using pure Python — no LLM.
+    Handles: "monday", "next monday", "this friday", "tomorrow", "today",
+             "march 23", "23rd", "2026-03-23", etc.
+    Returns None if cannot resolve.
+    """
+    if not text:
+        return None
+    today = today or datetime.now()
+    t = text.lower().strip()
+
+    # Already a date string
+    for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%d-%m-%Y"):
+        try:
+            return datetime.strptime(t, fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            pass
+
+    # Relative
+    if t in ("today",):
+        return today.strftime("%Y-%m-%d")
+    if t in ("tomorrow",):
+        return (today + timedelta(days=1)).strftime("%Y-%m-%d")
+    if t in ("yesterday",):
+        return (today - timedelta(days=1)).strftime("%Y-%m-%d")
+
+    # Day of week — "monday", "next monday", "this monday"
+    DAY_MAP = {
+        "monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
+        "friday": 4, "saturday": 5, "sunday": 6,
+        "mon": 0, "tue": 1, "wed": 2, "thu": 3,
+        "fri": 4, "sat": 5, "sun": 6,
+    }
+    is_next = "next" in t
+    is_this = "this" in t
+
+    for day_name, target_wd in DAY_MAP.items():
+        if day_name not in t:
+            continue
+        today_wd = today.weekday()   # 0=Monday
+        diff = (target_wd - today_wd) % 7
+
+        if diff == 0:
+            # Same weekday today
+            if is_next:
+                diff = 7   # "next monday" when today IS monday → 7 days
+            else:
+                diff = 7   # "monday" when today is monday → treat as next week
+        elif is_next and diff <= 7:
+            # "next monday" when monday is 3 days away → still 3 days (it IS next monday)
+            pass
+        # If not next/this and diff > 0, use the upcoming occurrence
+        result = today + timedelta(days=diff)
+        return result.strftime("%Y-%m-%d")
+
+    # Try month + day: "march 23", "23rd march", "23 march"
+    import re as _re
+    MONTHS = {
+        "january": 1, "february": 2, "march": 3, "april": 4,
+        "may": 5, "june": 6, "july": 7, "august": 8,
+        "september": 9, "october": 10, "november": 11, "december": 12,
+        "jan": 1, "feb": 2, "mar": 3, "apr": 4, "jun": 6,
+        "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+    }
+    for mon_name, mon_num in MONTHS.items():
+        if mon_name in t:
+            nums = _re.findall(r"\d+", t)
+            if nums:
+                day_num = int(nums[0])
+                year    = today.year
+                try:
+                    candidate = datetime(year, mon_num, day_num)
+                    if candidate < today:
+                        candidate = datetime(year + 1, mon_num, day_num)
+                    return candidate.strftime("%Y-%m-%d")
+                except ValueError:
+                    pass
+
+    return None
+
 
 def book_appointment(state: dict, **kwargs) -> dict:
     """
@@ -706,22 +795,73 @@ def book_appointment(state: dict, **kwargs) -> dict:
         try:
             booking = json.loads(raw)
         except json.JSONDecodeError:
-            return {"success": False, "message": "I couldn't understand the booking details. Could you tell me the service, date, and time you'd like?"}
+            return {"success": False, "needs_info": True, "message": ("Please tell me the service, date and time. Example: **Dental Cleaning on Monday at 2pm**")}
 
         missing = booking.get("missing_fields", [])
         if not booking.get("parsed_ok", False) or missing:
-            nice_missing = " and ".join(missing) if missing else "date and time"
+            parts = []
+            if "date" in missing:
+                parts.append("the **date** (e.g. **Monday**, **March 25**, **tomorrow**)")
+            if "time" in missing:
+                parts.append("the **time** (e.g. **10am**, **2:30pm**, **14:00**)")
+            if "service" in missing:
+                parts.append("the **service** you'd like")
+            if not parts:
+                parts = ["the **date and time**"]
+            ask = " and ".join(parts)
             return {
                 "success": False,
                 "needs_info": True,
                 "missing_fields": missing,
-                "message": f"I'd be happy to book that for you! Could you let me know the {nice_missing}?",
+                "message": (
+                    f"To complete your booking I need {ask}. "
+                    f"For example: **Dental Cleaning on Monday at 2pm**"
+                ),
             }
 
         date_str = booking.get("date", "")
         time_str = booking.get("time", "")[:5]
         if not date_str or not time_str:
-            return {"success": False, "message": "I need a specific date and time to proceed. What works for you?"}
+            return {
+                "success": False,
+                "needs_info": True,
+                "message": (
+                    "I need a specific date and time to book. "
+                    "Please reply with the date and time, e.g. **Monday at 2pm** or **March 25 at 10:00**."
+                ),
+            }
+
+        # ── Python date correction ────────────────────────────────────────────
+        # The function-calling LLM sometimes mis-resolves day names.
+        # We validate by checking the day-of-week; if wrong, re-resolve via Python.
+        full_query = state.get("query", "") + " " + " ".join(
+            m.get("content", "") for m in (state.get("history") or [])[-4:]
+            if m.get("role") == "user"
+        )
+        today_dt = datetime.now()
+        DAY_NAMES = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        mentioned_day = next((d for d in DAY_NAMES if d in full_query.lower()), None)
+
+        if mentioned_day and date_str:
+            try:
+                resolved_dt  = datetime.fromisoformat(date_str)
+                resolved_wd  = resolved_dt.strftime("%A").lower()
+                if resolved_wd != mentioned_day:
+                    # LLM got the wrong weekday — use Python resolver instead
+                    corrected = _resolve_date_python(
+                        ("next " if "next" in full_query.lower() else "") + mentioned_day,
+                        today_dt,
+                    )
+                    if corrected:
+                        print(f"  [DATE FIX] LLM said {date_str} ({resolved_wd}) but customer said {mentioned_day} → corrected to {corrected}")
+                        date_str = corrected
+            except (ValueError, TypeError):
+                pass
+
+        # Also try pure Python first if query contains day names
+        if mentioned_day and not date_str:
+            prefix = "next " if "next" in full_query.lower() else ""
+            date_str = _resolve_date_python(prefix + mentioned_day, today_dt) or date_str
 
         try:
             req_dt  = datetime.fromisoformat(f"{date_str}T{time_str}:00")
@@ -802,7 +942,7 @@ def book_appointment(state: dict, **kwargs) -> dict:
             (svc_info["service_id"], state.get("business_name"))
         ).fetchone()
         if not svc_row:
-            return {"success": False, "message": "I couldn't find that service. Could you tell me which service you'd like?"}
+            return {"success": False, "needs_info": True, "message": ("I could not find that service. Please type the exact service name, e.g. **Dental Cleaning** or **Root Canal Treatment**.")}
 
         svc_name = svc_row["name"]
         price    = svc_row["price"]
@@ -893,7 +1033,7 @@ No markdown, just JSON."""
         try:
             booking = json.loads(raw)
         except json.JSONDecodeError:
-            return {"success": False, "message": "I couldn't understand the booking details. Could you specify the service, date, and time?"}
+            return {"success": False, "needs_info": True, "message": ("Please tell me the service, date and time. Example: **Teeth Cleaning on Monday at 2pm**")}
 
         missing = booking.get("missing_fields", [])
         if not booking.get("parsed_ok", False) or missing:
@@ -908,7 +1048,7 @@ No markdown, just JSON."""
         date_str = booking.get("date", "")
         time_str = booking.get("time", "")
         if not date_str or not time_str:
-             return {"success": False, "message": "I need a specific date and time to book."}
+             return {"success": False, "needs_info": True, "message": ("Please reply with the date and time. Example: **Monday at 2pm** or **March 25 at 10am**")}
              
         try:
             time_str = time_str[:5]
@@ -1138,10 +1278,24 @@ def reschedule_booking(state: dict, **kwargs) -> dict:
         try:
             result = json.loads(raw)
         except json.JSONDecodeError:
-            return {"success": False, "message": "When would you like to reschedule to? Please provide a date and time."}
+            return {
+                "success": False,
+                "needs_info": True,
+                "message": (
+                    "Please reply with your new preferred date and time. "
+                    "For example: **Wednesday at 3pm** or **March 25 at 10am**"
+                ),
+            }
 
         if not result.get("parsed_ok", False):
-            return {"success": False, "needs_info": True, "message": result.get("message", "When would you like to reschedule to?")}
+            return {
+                "success": False,
+                "needs_info": True,
+                "message": (
+                    "Please tell me the new date and time for your appointment. "
+                    "For example: **Monday at 2pm** or **March 25 at 10:00**"
+                ),
+            }
 
         new_date = result.get("date", "")
         new_time = result.get("time", "")
@@ -1351,8 +1505,7 @@ def cancel_booking(state: dict, **kwargs) -> dict:
         ).fetchone()
 
         if not order:
-            return {"success": False,
-                    "message": "I couldn't find any active appointments to cancel. Would you like to make a new booking?"}
+            return {"success": False, "message": ("I could not find any active bookings to cancel. If you want to make a new booking, type the service name and date, e.g. **Dental Cleaning on Monday at 2pm**.")}
 
         order_date     = order["scheduled_at"][:10] if order["scheduled_at"] else ""
         session_orders = conn.execute(
@@ -1490,12 +1643,28 @@ def check_availability(state: dict, **kwargs) -> dict:
                         "providers": [p["name"] for p in available_today]
                     })
 
+        # Build per-day summary for the message so the LLM gives accurate numbers
+        day_counts: dict[str, int] = {}
+        for slot in slots:
+            day = slot["day"]
+            day_counts[day] = day_counts.get(day, 0) + 1
+
+        day_summary = ", ".join(
+            f"{day}: {cnt} slot{'s' if cnt != 1 else ''}"
+            for day, cnt in day_counts.items()
+        )
+
         return {
             "success": True,
             "available_providers": [{"name": p["name"], "specialty": p["specialty"], "rating": p["rating"]} for p in providers],
             "available_slots": slots[:20],
             "services": [dict(s) for s in services],
-            "message": f"{len(providers)} providers available. {len(slots)} open time slots in the next 7 days.",
+            "slots_by_day": day_counts,
+            "message": (
+                f"{len(providers)} providers available. "
+                f"{len(slots)} open slots across the next 7 days "
+                f"({day_summary})."
+            ),
         }
     finally:
         conn.close()
@@ -1543,10 +1712,10 @@ No markdown, just JSON."""
     try:
         result = json.loads(raw)
     except json.JSONDecodeError:
-        return {"success": False, "message": "Could you please provide your full delivery address including postal code?"}
+        return {"success": False, "needs_info": True, "message": ("Please type your full delivery address. Example: **123 Main Street, Toronto, ON M5V 1A1**")}
 
     if not result.get("found", False):
-        return {"success": False, "needs_info": True, "message": result.get("message", "Please provide your delivery address.")}
+        return {"success": False, "needs_info": True, "message": result.get("message") or "Please type your full delivery address. Example: **123 Main Street, Toronto, ON M5V 1A1**"}
 
     address_str = result.get("formatted", "")
     postal_code = result.get("postal_code", "").upper().replace(" ", "")
@@ -1624,26 +1793,50 @@ No markdown, just JSON."""
 
 def set_delivery_type(state: dict, **kwargs) -> dict:
     """Set whether the order is for pickup or delivery."""
+    # Priority 1: explicit argument from LLM function call
+    delivery_type_arg = (
+        state.get("delivery_type") or kwargs.get("delivery_type") or ""
+    ).lower().strip()
+
+    # Priority 2: scan current query
     query = state.get("query", "").lower()
 
-    if any(w in query for w in ["deliver", "delivery", "bring", "send"]):
+    # Priority 3: scan recent history for delivery intent
+    history = state.get("history", [])
+    history_text = " ".join(
+        m.get("content", "") for m in history[-6:] if m.get("role") == "user"
+    ).lower()
+
+    combined = f"{delivery_type_arg} {query} {history_text}"
+
+    if any(w in combined for w in ["pickup", "pick up", "pick-up", "collect", "come get", "i'll pick", "pick it"]):
+        delivery_type = "pickup"
+    elif any(w in combined for w in ["deliver", "delivery", "bring", "send", "home", "address"]):
+        delivery_type = "delivery"
+    else:
+        return {
+            "success": False,
+            "needs_info": True,
+            "message": (
+                "How would you like to receive your order? "
+                "Type **pickup** to collect it yourself, "
+                "or **delivery** to have it sent to your address."
+            ),
+        }
+
+    if delivery_type == "delivery":
         return {
             "success": True,
             "delivery_type": "delivery",
             "needs_address": True,
-            "message": "Got it — delivery! Please provide your delivery address.",
+            "message": "Got it — delivery! Please provide your full delivery address.",
         }
-    elif any(w in query for w in ["pickup", "pick up", "pick-up", "collect", "come get"]):
+    else:
         return {
             "success": True,
             "delivery_type": "pickup",
             "needs_address": False,
             "message": "Got it — pickup! Your order will be ready for collection.",
-        }
-    else:
-        return {
-            "success": False,
-            "message": "Would you like pickup or delivery?",
         }
 
 def set_delivery_address(state: dict, **kwargs) -> dict:
@@ -1689,8 +1882,125 @@ def set_delivery_address(state: dict, **kwargs) -> dict:
 # Information & History Tools
 # ─────────────────────────────────────────────
 
+def _extract_active_filter(state: dict) -> str:
+    """
+    Extract and persist an active service/category filter from the conversation.
+
+    Logic:
+    1. Check conversation_state for a saved filter ("active_service_filter").
+    2. If the current query narrows or sets a new filter, update conversation_state.
+    3. If the current query is a vague follow-up ("cheapest", "which is best",
+       "show me all") return the SAVED filter so context is preserved.
+    4. If the query explicitly widens scope ("show everything", "all services"),
+       clear the saved filter.
+
+    Returns the active filter string (may be empty).
+    """
+    from core.database import load_conversation_state, save_conversation_state
+
+    conv_id = state.get("conversation_id", "")
+    query   = state.get("query", "").lower().strip()
+
+    cs      = load_conversation_state(conv_id) or {}
+    saved   = cs.get("active_service_filter", "")
+
+    # Vague follow-up words — preserve existing filter, never re-derive
+    VAGUE_WORDS = {
+        # price/value queries
+        "cheap", "cheapest", "cheapest one", "cheap one", "most expensive",
+        "affordable", "budget", "price", "cost", "how much", "lowest",
+        "tell me cheap", "tell me the cheapest", "what's the cheapest",
+        "which is cheapest", "which is best", "which is cheapest?",
+        # generic follow-ups
+        "best", "popular", "top", "recommended",
+        "recommend", "suggest", "which", "options",
+        "show me", "list", "give me", "all of them",
+        "what are", "tell me", "more", "others", "other",
+    }
+    # Also treat any query under 5 words that has a saved filter as vague
+    is_short_query = len(query.split()) <= 4
+    if saved and (
+        any(query == w or query.startswith(w + " ") or query == w + "?" for w in VAGUE_WORDS)
+        or is_short_query
+    ):
+        return saved
+
+    # Explicit reset words — clear filter
+    RESET = {"all services", "everything", "full menu", "full list", "show everything"}
+    if any(r in query for r in RESET):
+        cs.pop("active_service_filter", None)
+        save_conversation_state(conv_id, cs)
+        return ""
+
+    # Try to extract a new filter from the query using LLM
+    history = state.get("history", [])
+    recent_user_msgs = " | ".join(
+        m.get("content", "")
+        for m in history[-6:] if m.get("role") == "user"
+    )
+    all_chunks = state.get("all_chunks", [])
+    services_sample = ""
+    try:
+        conn = _db()
+        svcs = conn.execute(
+            "SELECT name, category FROM services WHERE business_name = ? ORDER BY id LIMIT 30",
+            (state.get("business_name"),),
+        ).fetchall()
+        conn.close()
+        services_sample = ", ".join(
+            f"{s['name']} ({s['category'] or 'general'})" for s in svcs
+        )
+    except Exception:
+        pass
+
+    filter_prompt = f"""You are analysing what category or topic a customer is focused on.
+
+Recent conversation (user messages):
+{recent_user_msgs}
+
+Current query: "{query}"
+
+Available services/categories: {services_sample or '(unknown)'}
+
+Identify the service topic/category filter implied by the conversation.
+Examples:
+- "I need something for my feet" → "feet"
+- "tell me about massages" → "massage"
+- "any hair treatments?" → "hair"
+- "show me dental cleaning options" → "dental cleaning"
+- "what do you have?" → ""   (no filter — too vague)
+- "cheapest" → ""            (vague follow-up — no new filter)
+
+Return ONLY the filter keyword(s) as a short string, or "" if none.
+No quotes, no JSON, just the filter text or blank."""
+
+    raw = llm_call(filter_prompt, temperature=0.1, max_tokens=30).strip().strip('"').strip("'")
+    new_filter = raw if raw and raw not in ("none", "null", "n/a", '""', "''") else ""
+
+    if new_filter:
+        cs["active_service_filter"] = new_filter
+        save_conversation_state(conv_id, cs)
+        return new_filter
+
+    return saved
+
+
+def _filter_services(services: list[dict], active_filter: str) -> list[dict]:
+    """Return services that match the active filter (name or category contains it)."""
+    if not active_filter:
+        return services
+    kw = active_filter.lower()
+    matched = [
+        s for s in services
+        if kw in (s.get("name") or "").lower()
+        or kw in (s.get("category") or "").lower()
+        or kw in (s.get("description") or "").lower()
+    ]
+    return matched if matched else services   # fall back to all if nothing matches
+
+
 def get_pricing(state: dict, **kwargs) -> dict:
-    """Get pricing information for all available services."""
+    """Get pricing information for services — respects active category filter from memory."""
     conn = _db()
     try:
         services = conn.execute(
@@ -1698,61 +2008,93 @@ def get_pricing(state: dict, **kwargs) -> dict:
             (state.get("business_name"),)
         ).fetchall()
         services_list = [dict(s) for s in services]
+
+        # ── Apply context filter (memory fix) ──────────────────────────────
+        active_filter = _extract_active_filter(state)
+        if active_filter:
+            filtered = _filter_services(services_list, active_filter)
+            filter_note = f"(filtered to: '{active_filter}')"
+        else:
+            filtered = services_list
+            filter_note = ""
+
         categorised: dict[str, list] = {}
-        for svc in services_list:
-            cat = svc.get("category", "General")
+        for svc in filtered:
+            cat = svc.get("category") or "General"
             categorised.setdefault(cat, []).append(svc)
+
         return {
-            "success": True,
+            "success":              True,
             "services_by_category": categorised,
-            "total_services": len(services_list),
-            "message": f"Found {len(services_list)} services across {len(categorised)} categories.",
+            "total_services":       len(filtered),
+            "active_filter":        active_filter,
+            "message": (
+                f"Found {len(filtered)} service(s) {filter_note}."
+                if active_filter else
+                f"Found {len(filtered)} services across {len(categorised)} categories."
+            ),
         }
     finally:
         conn.close()
 
 
+
 def get_recommendations(state: dict, **kwargs) -> dict:
-    """Provide personalised service recommendations based on customer history and popular items."""
+    """Provide personalised recommendations — respects active category filter from memory."""
     user_id = state.get("user_id")
     conn = _db()
     try:
-        # What they've ordered before
+        # ── Apply context filter (memory fix) ──────────────────────────────
+        active_filter = _extract_active_filter(state)
+
+        base_where = "s.business_name = ?"
+        base_args  = [state.get("business_name")]
+
+        # Build SQL fragment that filters by category/name if a filter is active
+        if active_filter:
+            kw = f"%{active_filter}%"
+            filter_sql  = " AND (LOWER(s.name) LIKE ? OR LOWER(s.category) LIKE ? OR LOWER(s.description) LIKE ?)"
+            filter_args = [kw, kw, kw]
+        else:
+            filter_sql  = ""
+            filter_args = []
+
+        # What they've ordered before (filtered)
         past_services = conn.execute(
-            """SELECT s.name, COUNT(o.id) as cnt FROM orders o
+            f"""SELECT s.name, COUNT(o.id) as cnt FROM orders o
                JOIN services s ON o.service_id = s.id
-               WHERE o.user_id = ? AND s.business_name = ? GROUP BY s.name ORDER BY cnt DESC LIMIT 5""",
-            (user_id, state.get("business_name")),
-        ).fetchall()
-
-        # Popular items globally for THIS business
-        popular = conn.execute(
-            """SELECT s.name, COUNT(o.id) as cnt FROM orders o
-               JOIN services s ON o.service_id = s.id
-               WHERE s.business_name = ?
+               WHERE o.user_id = ? AND {base_where}{filter_sql}
                GROUP BY s.name ORDER BY cnt DESC LIMIT 5""",
-            (state.get("business_name"),)
+            (user_id, *base_args, *filter_args),
         ).fetchall()
 
-        # New services they haven't tried
+        # Popular items globally for this business (filtered)
+        popular = conn.execute(
+            f"""SELECT s.name, s.price, COUNT(o.id) as cnt FROM orders o
+               JOIN services s ON o.service_id = s.id
+               WHERE {base_where}{filter_sql}
+               GROUP BY s.name ORDER BY cnt DESC LIMIT 5""",
+            (*base_args, *filter_args),
+        ).fetchall()
+
+        # New services they haven't tried (filtered)
         used_ids = [r[0] for r in conn.execute(
             "SELECT DISTINCT service_id FROM orders WHERE user_id = ?", (user_id,)
         ).fetchall()]
         if used_ids:
             placeholders = ",".join("?" * len(used_ids))
             new_services = conn.execute(
-                f"SELECT * FROM services WHERE business_name = ? AND id NOT IN ({placeholders}) ORDER BY RANDOM() LIMIT 3",
-                (state.get("business_name"), *used_ids),
+                f"SELECT * FROM services WHERE {base_where} AND id NOT IN ({placeholders}){filter_sql.replace('s.', '')} ORDER BY price ASC LIMIT 4",
+                (*base_args, *used_ids, *filter_args),
             ).fetchall()
         else:
             new_services = conn.execute(
-                "SELECT * FROM services WHERE business_name = ? ORDER BY RANDOM() LIMIT 3",
-                (state.get("business_name"),)
+                f"SELECT * FROM services WHERE {base_where}{filter_sql.replace('s.', '')} ORDER BY price ASC LIMIT 4",
+                (*base_args, *filter_args),
             ).fetchall()
 
         loyalty = conn.execute("SELECT points, tier FROM loyalty_points WHERE user_id = ?", (user_id,)).fetchone()
 
-        # Check family members for cross-sell
         user = conn.execute("SELECT family_members FROM users WHERE id = ?", (user_id,)).fetchone()
         family_info = []
         if user and user["family_members"]:
@@ -1761,18 +2103,25 @@ def get_recommendations(state: dict, **kwargs) -> dict:
             except json.JSONDecodeError:
                 pass
 
+        filter_note = f"(scoped to: '{active_filter}')" if active_filter else ""
         return {
-            "success": True,
+            "success":        True,
             "past_favorites": [{"name": r["name"], "order_count": r["cnt"]} for r in past_services],
-            "popular_items": [{"name": r["name"], "order_count": r["cnt"]} for r in popular],
-            "new_to_try": [dict(s) for s in new_services],
+            "popular_items":  [{"name": r["name"], "price": r["price"], "order_count": r["cnt"]} for r in popular],
+            "new_to_try":     [dict(s) for s in new_services],
             "loyalty_points": loyalty["points"] if loyalty else 0,
-            "loyalty_tier": loyalty["tier"] if loyalty else "bronze",
+            "loyalty_tier":   loyalty["tier"] if loyalty else "bronze",
             "family_members": family_info,
-            "message": f"Based on your history, here are some personalised recommendations.",
+            "active_filter":  active_filter,
+            "message": (
+                f"Here are personalised recommendations {filter_note}."
+                if active_filter else
+                "Based on your history, here are some personalised recommendations."
+            ),
         }
     finally:
         conn.close()
+
 
 
 def get_order_history(state: dict, **kwargs) -> dict:
@@ -1895,18 +2244,77 @@ def get_business_hours(state: dict, **kwargs) -> dict:
 
 
 def get_provider_info(state: dict, **kwargs) -> dict:
-    """Get information about service providers/staff members."""
+    """Get information about service providers/staff members. Filters by name if provided."""
     conn = _db()
     try:
-        providers = conn.execute(
-            "SELECT name, specialty, rating, available FROM service_providers WHERE business_name = ? ORDER BY rating DESC",
+        all_providers = conn.execute(
+            "SELECT name, specialty, rating, available, schedule FROM service_providers WHERE business_name = ? ORDER BY rating DESC",
             (state.get("business_name"),)
         ).fetchall()
+
+        # Filter by name if the router extracted one
+        provider_name = (
+            state.get("provider_name")
+            or kwargs.get("provider_name")
+            or ""
+        ).strip().lower()
+
+        if provider_name:
+            # Fuzzy match: any part of the search name appears in the provider name
+            search_parts = provider_name.replace("dr.", "").replace("dr ", "").split()
+            matched = [
+                p for p in all_providers
+                if any(part in p["name"].lower() for part in search_parts if len(part) > 1)
+            ]
+        else:
+            matched = list(all_providers)
+
+        # Build per-provider availability with their schedule days
+        providers_out = []
+        for p in matched:
+            info = {
+                "name": p["name"],
+                "specialty": p["specialty"],
+                "rating": p["rating"],
+                "available": bool(p["available"]),
+            }
+            # Parse schedule to show working days
+            if p["schedule"]:
+                try:
+                    sched = json.loads(p["schedule"])
+                    day_map = {"mon": "Mon", "tue": "Tue", "wed": "Wed",
+                               "thu": "Thu", "fri": "Fri", "sat": "Sat", "sun": "Sun"}
+                    info["working_days"] = [day_map.get(d, d) for d in sched.keys()]
+                    info["hours"] = sched
+                except Exception:
+                    pass
+            providers_out.append(info)
+
+        if not providers_out and provider_name:
+            # No match found — return all with a helpful note
+            return {
+                "success": True,
+                "providers": [{"name": p["name"], "specialty": p["specialty"],
+                               "rating": p["rating"], "available": bool(p["available"])}
+                              for p in all_providers],
+                "total_providers": len(all_providers),
+                "searched_for": provider_name,
+                "message": (
+                    f"No provider found matching '{provider_name}'. "
+                    f"Here are all {len(all_providers)} staff members available."
+                ),
+            }
+
+        name_label = f" matching '{provider_name}'" if provider_name else ""
         return {
             "success": True,
-            "providers": [dict(p) for p in providers],
-            "total_providers": len(providers),
-            "message": f"Found {len(providers)} service providers.",
+            "providers": providers_out,
+            "total_providers": len(providers_out),
+            "searched_for": provider_name,
+            "message": (
+                f"Found {len(providers_out)} provider(s){name_label}."
+                if providers_out else "No providers found."
+            ),
         }
     finally:
         conn.close()
@@ -2163,7 +2571,7 @@ No markdown, just JSON."""
         return {
             "success": True, "user_id": user_id,
             "current_profile": {"full_name": user["full_name"], "email": user["email"], "phone": user["phone"], "address": user["address"]},
-            "message": "Your profile is on file. Please tell me which field (name, phone, email, address) you'd like to update and the new value.",
+            "message": "To update your profile, type the field and new value. Example: **phone 0555-1234** or **email new@email.com** or **name John Smith**",
         }
     finally:
         conn.close()

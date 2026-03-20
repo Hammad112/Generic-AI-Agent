@@ -194,13 +194,24 @@ CREATE TABLE IF NOT EXISTS conversation_state (
     state_json      TEXT NOT NULL,
     updated_at      TEXT DEFAULT (datetime('now'))
 );
+
+-- Long-term user memory (persists across sessions)
+CREATE TABLE IF NOT EXISTS user_memory (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id     INTEGER REFERENCES users(id),
+    business_name TEXT,
+    category    TEXT,   -- e.g. 'preference', 'health', 'complaint', 'personal', 'service'
+    fact        TEXT NOT NULL,
+    created_at  TEXT DEFAULT (datetime('now')),
+    updated_at  TEXT DEFAULT (datetime('now'))
+);
 """
 
 
 def init_db() -> None:
     conn = _get_db()
     try:
-        conn.execute("PRAGMA journal_mode=WAL")  # Better concurrency: multiple readers + one writer
+        conn.execute("PRAGMA journal_mode=WAL")
         conn.executescript(SCHEMA_SQL)
         # Migrations for older DBs (add columns if missing)
         for table, col in [("conversations", "business_name"), ("enriched_knowledge", "business_name")]:
@@ -208,10 +219,81 @@ def init_db() -> None:
                 conn.execute(f"ALTER TABLE {table} ADD COLUMN {col} TEXT")
             except sqlite3.OperationalError:
                 pass  # column already exists
+        # Ensure user_memory table exists (migration for existing DBs)
+        try:
+            conn.executescript("""
+                CREATE TABLE IF NOT EXISTS user_memory (
+                    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id     INTEGER REFERENCES users(id),
+                    business_name TEXT,
+                    category    TEXT,
+                    fact        TEXT NOT NULL,
+                    created_at  TEXT DEFAULT (datetime('now')),
+                    updated_at  TEXT DEFAULT (datetime('now'))
+                );
+            """)
+        except Exception:
+            pass
         conn.commit()
     finally:
         conn.close()
 
+
+def save_user_memory_facts(user_id: int, business_name: str, facts: list[dict]) -> None:
+    """
+    Persist extracted memory facts for a user.
+    Each fact: {"category": "preference", "fact": "prefers morning appointments"}
+    Deduplicates — won't add the same fact twice.
+    """
+    if not facts:
+        return
+    conn = _get_db()
+    try:
+        for item in facts:
+            fact_text = (item.get("fact") or "").strip()
+            category  = (item.get("category") or "general").strip().lower()
+            if not fact_text or len(fact_text) < 5:
+                continue
+            # Check for near-duplicate (same user + same first 60 chars)
+            existing = conn.execute(
+                """SELECT id FROM user_memory
+                   WHERE user_id = ? AND business_name = ?
+                     AND LOWER(SUBSTR(fact, 1, 60)) = LOWER(SUBSTR(?, 1, 60))""",
+                (user_id, business_name, fact_text),
+            ).fetchone()
+            if existing:
+                conn.execute(
+                    "UPDATE user_memory SET fact = ?, updated_at = datetime('now') WHERE id = ?",
+                    (fact_text, existing["id"]),
+                )
+            else:
+                conn.execute(
+                    """INSERT INTO user_memory (user_id, business_name, category, fact)
+                       VALUES (?, ?, ?, ?)""",
+                    (user_id, business_name, category, fact_text),
+                )
+        conn.commit()
+    except Exception as exc:
+        print(f"[MEMORY] save_user_memory_facts error: {exc}")
+    finally:
+        conn.close()
+
+
+def load_user_memory(user_id: int, business_name: str) -> list[dict]:
+    """Load all long-term memory facts for a user at a business."""
+    conn = _get_db()
+    try:
+        rows = conn.execute(
+            """SELECT category, fact, updated_at FROM user_memory
+               WHERE user_id = ? AND (business_name = ? OR business_name IS NULL OR business_name = '')
+               ORDER BY updated_at DESC LIMIT 30""",
+            (user_id, business_name),
+        ).fetchall()
+        return [dict(r) for r in rows]
+    except Exception:
+        return []
+    finally:
+        conn.close()
 
 def _get_db() -> sqlite3.Connection:
     db_name = os.getenv("DB_NAME", "business_agent.db")
@@ -518,16 +600,37 @@ Respond with only the JSON, no markdown.
 
     conn = _get_db()
     try:
-        # ── 1. Insert services ──────────────────────────────────────
+        # ── 1. Insert services (skip duplicates by name) ────────────
         service_ids = []
         service_durations = {}
+
+        # Load existing service names to avoid duplicates
+        existing_svc_names = {
+            r["name"].lower().strip()
+            for r in conn.execute(
+                "SELECT name FROM services WHERE business_name = ?", (business_name,)
+            ).fetchall()
+        }
+
         for svc in data.get("services", []):
+            svc_name = svc.get("name", "Service").strip()
+            if svc_name.lower() in existing_svc_names:
+                # Reuse the existing service id instead of inserting a duplicate
+                row = conn.execute(
+                    "SELECT id, duration_min FROM services WHERE business_name = ? AND LOWER(name) = ?",
+                    (business_name, svc_name.lower()),
+                ).fetchone()
+                if row:
+                    service_ids.append(row["id"])
+                    service_durations[row["id"]] = row["duration_min"] or 30
+                continue
+
             cur = conn.execute(
                 "INSERT INTO services (business_name, name, description, price, duration_min, category, modifiers) "
                 "VALUES (?, ?, ?, ?, ?, ?, ?)",
                 (
                     business_name,
-                    svc.get("name", "Service"),
+                    svc_name,
                     svc.get("description", ""),
                     float(svc.get("price", 50.0)),
                     int(svc.get("duration_min", 30)),
@@ -537,6 +640,7 @@ Respond with only the JSON, no markdown.
             )
             service_ids.append(cur.lastrowid)
             service_durations[cur.lastrowid] = int(svc.get("duration_min", 30))
+            existing_svc_names.add(svc_name.lower())
 
         # ── 2. Insert named service providers ──────────────────────
         named_providers = _get_named_providers(business_type)
