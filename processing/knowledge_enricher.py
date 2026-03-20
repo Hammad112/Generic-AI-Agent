@@ -5,6 +5,9 @@ Uses LLM to:
   1) detect_business_type() from PDF text
   2) enrich_knowledge() — generate supplementary knowledge not in the PDF
      (called "skills" in the spec): FAQs, product comparisons, tips, etc.
+  3) enrich_with_web_search() — use OpenAI web search tool to pull LIVE knowledge
+     about this business type (health warnings, trends, alternatives, etc.)
+     e.g. "Pizza is not healthy → agent knows to proactively suggest healthy options"
 """
 
 import os
@@ -185,13 +188,188 @@ def _save_enriched(enriched: list[dict], business_name: str) -> None:
         conn.close()
 
 
-def load_enriched_from_db(business_name: str) -> list[dict]:
+def _ddg_search(query: str, max_results: int = 5) -> list[dict]:
+    """
+    Search DuckDuckGo. Supports both package names:
+      pip install ddgs              (new name)
+      pip install duckduckgo-search (old name, now shows warning)
+    """
+    try:
+        from ddgs import DDGS
+    except ImportError:
+        try:
+            from duckduckgo_search import DDGS
+        except ImportError:
+            raise RuntimeError(
+                "DuckDuckGo search not installed. Run: pip install ddgs"
+            )
+    try:
+        with DDGS() as ddgs:
+            results = list(ddgs.text(query, max_results=max_results))
+        return results
+    except Exception as exc:
+        raise RuntimeError(f"DuckDuckGo search failed: {exc}")
+
+
+def enrich_with_web_search(business_name: str, business_type: str, services: list[str] = None) -> list[dict]:
+    """
+    Use DuckDuckGo (free, no API key) to pull live, factual knowledge about
+    this business type and its services, then use the project's own LLM to
+    synthesise that into knowledge-base articles.
+
+    Flow:
+      1. LLM generates 5-7 targeted search queries for this business type.
+      2. DuckDuckGo fetches real web snippets for each query (free, instant).
+      3. LLM synthesises the snippets into a 150-200 word knowledge article.
+      4. Articles saved to enriched_knowledge table (source='web_search').
+
+    Examples of knowledge added:
+      - "Pizza is calorie-dense → suggest thin crust / veggie options"
+      - "Teeth whitening sensitivity → advise avoiding cold food after"
+      - "Massage contraindicated post-surgery → ask patient first"
+
+    Falls back to LLM-only generation if DuckDuckGo is unavailable.
+    Requires: pip install duckduckgo-search
+    """
+    if enrichment_web_done(business_name):
+        return load_enriched_from_db(business_name, source_filter="web_search")
+
+    # ── Step 1: LLM generates targeted search queries ────────────────────────
+    service_snippet = ", ".join((services or [])[:10]) if services else ""
+    topics_prompt = f"""You are a consumer-awareness advisor for "{business_name}" ({business_type}).
+
+Identify 5-6 important real-world facts or warnings a customer service AI MUST know
+to give responsible, helpful advice about: {business_type}.
+{f'Services offered include: {service_snippet}.' if service_snippet else ''}
+
+Examples of the KIND of knowledge needed:
+- "Pizza calorie content healthy alternatives thin crust"
+- "dental whitening sensitivity aftercare tips"
+- "massage contraindications post surgery precautions"
+- "dry cleaning chemical solvents clothing care advice"
+
+Return ONLY a JSON array of short search query strings (5-8 words each):
+["query 1", "query 2", ...]
+No markdown, just JSON."""
+
+    raw = llm_call(topics_prompt, temperature=0.3)
+    raw = raw.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+    try:
+        search_queries = json.loads(raw)
+        if not isinstance(search_queries, list):
+            raise ValueError
+        search_queries = [str(q) for q in search_queries[:6]]
+    except (json.JSONDecodeError, ValueError):
+        search_queries = [
+            f"{business_type} health tips for customers",
+            f"{business_type} common concerns and alternatives",
+            f"{business_type} safety precautions advice",
+        ]
+
+    enriched = []
+    ddg_available = True
+
+    # ── Step 2 & 3: DDG fetch → LLM synthesise ──────────────────────────────
+    for query in search_queries:
+        raw_snippets = []
+
+        # Try DuckDuckGo first
+        if ddg_available:
+            try:
+                results = _ddg_search(query, max_results=4)
+                raw_snippets = [
+                    f"[{r.get('title', '')}] {r.get('body', '')}"
+                    for r in results if r.get("body")
+                ]
+                if raw_snippets:
+                    print(f"  [DDG] ✓ '{query}' → {len(raw_snippets)} results")
+                    # Store search details so they appear in logs/all_logs.log
+                    try:
+                        from core.master_log import log_web_search_detail
+                        log_web_search_detail(business_name, query, results)
+                    except Exception:
+                        pass
+            except RuntimeError as e:
+                err = str(e)
+                if "not installed" in err:
+                    ddg_available = False
+                    print(f"  [DDG] duckduckgo-search not installed — using LLM fallback.")
+                else:
+                    print(f"  [DDG] ✗ '{query}' — {e}")
+
+        # Build synthesis prompt (with real snippets if available, else LLM-only)
+        if raw_snippets:
+            snippets_block = "\n\n".join(raw_snippets[:4])
+            synthesis_prompt = (
+                f'You are a knowledge-base writer for "{business_name}" ({business_type}).\n\n'
+                f'Using these real web search results for "{query}":\n\n'
+                f"{snippets_block}\n\n"
+                f"Write a concise 150-200 word knowledge-base article that a customer service AI "
+                f"can use to give practical, accurate advice to customers. "
+                f"Focus on what customers should KNOW and what the AI should RECOMMEND. "
+                f"Do not just repeat the snippets — synthesise them into clear guidance."
+            )
+            source_tag = "web_search"
+        else:
+            # Pure LLM fallback — no DDG results
+            synthesis_prompt = (
+                f'You are a knowledge-base writer for "{business_name}" ({business_type}).\n\n'
+                f'Write a 150-200 word article answering: "{query}"\n\n'
+                f"Include practical advice a customer service AI should give. "
+                f"Use general industry knowledge. Label estimates as 'typically' or 'generally'."
+            )
+            source_tag = "web_search_llm_fallback"
+
+        try:
+            content = llm_call(synthesis_prompt, temperature=0.4, max_tokens=500)
+            if content.strip():
+                enriched.append({
+                    "topic":      f"[Web Knowledge] {query.title()}",
+                    "content":    content.strip(),
+                    "source":     source_tag,
+                    "topic_tags": f"web,{source_tag},{business_type.lower().replace(' ', ',')}",
+                })
+        except Exception as exc:
+            print(f"  [WEB SEARCH] LLM synthesis failed for '{query}': {exc}")
+
+    if enriched:
+        _save_enriched(enriched, business_name)
+        ddg_count = sum(1 for e in enriched if e["source"] == "web_search")
+        llm_count = len(enriched) - ddg_count
+        print(
+            f"  [WEB SEARCH] Added {len(enriched)} articles for {business_name} "
+            f"({ddg_count} from DDG, {llm_count} LLM-only)"
+        )
+
+    return enriched
+
+
+def enrichment_web_done(business_name: str) -> bool:
+    """Check if web search enrichment has already been run for this business."""
     conn = _get_db()
     try:
-        rows = conn.execute(
-            "SELECT * FROM enriched_knowledge WHERE business_name = ? ORDER BY id",
-            (business_name,)
-        ).fetchall()
+        count = conn.execute(
+            "SELECT COUNT(*) FROM enriched_knowledge WHERE business_name = ? AND source LIKE 'web_search%'",
+            (business_name,),
+        ).fetchone()[0]
+        return count > 0
+    finally:
+        conn.close()
+
+
+def load_enriched_from_db(business_name: str, source_filter: str = "") -> list[dict]:
+    conn = _get_db()
+    try:
+        if source_filter:
+            rows = conn.execute(
+                "SELECT * FROM enriched_knowledge WHERE business_name = ? AND source LIKE ? ORDER BY id",
+                (business_name, f"{source_filter}%"),
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM enriched_knowledge WHERE business_name = ? ORDER BY id",
+                (business_name,),
+            ).fetchall()
         return [dict(r) for r in rows]
     finally:
         conn.close()

@@ -368,7 +368,7 @@ def build_composite_prompt(
 
     # ── Conversation history ───────────────────────────────────────────────
     history_text = "\n".join(
-        f"{m['role'].upper()}: {m['content'][:300]}"
+        f"{m['role'].upper()}: {m['content'][:600]}"
         for m in (conversation_history or [])[-12:]
     ) or "No prior messages."
 
